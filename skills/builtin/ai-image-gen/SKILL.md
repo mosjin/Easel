@@ -84,7 +84,49 @@ python skills/shared/scripts/ai_image.py variations \
   --output outputs/主题名/variations
 ```
 
-### 5. 交付
+### 5. 去右下角「AI生成」标识（生成后必做）
+
+国内生图服务（智谱 `glm-image`、硅基流动 `Qwen-Image`/`Kolors` 等）会在成图右下角**统一叠加
+「AI生成」可见标识**，服务侧关不掉（智谱的 `watermark_enabled:false` 实测无效）。
+用 `skills/shared/scripts/img_no_watermark.py` 处理：**原始图一律保留**，成品另存。
+
+**推荐：一步生成 + 去标识（保留原图）**
+
+```bash
+python skills/shared/scripts/img_no_watermark.py gen \
+  --prompt "竖版反诈科普封面插画，深蓝渐变背景……" \
+  --size 1008x2016 \
+  -o outputs/主题名/cover.png
+```
+
+- `--size` 比目标画幅**高约 12%**（如目标 9:16 → 生成 `1008x2016`），脚本会裁掉带标识的底边，
+  得到**精确目标比例**（默认 `--ratio 9:16`）的干净成品。
+- 服务返回的原始图自动另存为 `outputs/主题名/assets/<成品名>_raw.<后缀>`，**永不覆盖**，
+  后期要重裁、重改都从它出发，不需要重新生成、不重复计费。
+- 提示词会自动追加「右下角与底边留空」约定（`--no-clean-corner` 可关），
+  降低标识压在画面元素上、导致只能覆盖不能裁的概率。
+- 收尾自动校验：成品再跑一次检测，检不到标识才算成功（退出码 0）。
+
+**处理已有图**（不重新生成）：
+
+```bash
+# 默认 cover：按列在上下边界之间插值重建背景，尺寸与画幅不变（适合本身已是 9:16 的图）
+python skills/shared/scripts/img_no_watermark.py process -i 原图.png -o 成品.png
+
+# crop：有富余底边时整条裁掉（需给 --ratio）
+python skills/shared/scripts/img_no_watermark.py process -i 原图.png -o 成品.png --strategy crop --ratio 9:16
+
+# 只看检出的标识框
+python skills/shared/scripts/img_no_watermark.py detect -i 原图.png --json
+```
+
+OCR 依赖 `chi_sim` 语言数据：脚本按 `skills/shared/tessdata/` → `TESSDATA_PREFIX` 环境变量 →
+系统目录（如 `/usr/share/tesseract-ocr/5/tessdata`）的顺序查找。缺失时自行安装
+（如 `apt install tesseract-ocr-chi-sim`），或把 `chi_sim.traineddata` 放进 `skills/shared/tessdata/`。
+
+> 合规提醒：该可见标识是平台按新规加的，移除后**发布时仍应按平台要求自主声明 AI 生成内容**。
+
+### 6. 交付
 
 告诉用户产物路径、生成参数（模式/模型/尺寸/张数）。如需再改尺寸/加水印/压缩，转 `image-editing`。
 
