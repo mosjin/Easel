@@ -4,6 +4,10 @@ All notable changes to Easel are documented in this file.
 
 ## [Unreleased]
 
+### Added
+
+- Added `skills/shared/scripts/img_no_watermark.py`, a deterministic AI-image watermark remover (detect / cover / process / gen) that keeps the original file intact and restores the target aspect ratio.
+
 ### Fixed
 
 - Fixed Kuaishou video publishing being blocked by the react-joyride onboarding overlay: the overlay is cleared before filling the description and again before submitting, and a persistent CSS kill-switch suppresses re-renders that reintroduce it.
