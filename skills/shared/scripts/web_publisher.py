@@ -103,7 +103,8 @@ PLATFORMS: dict[str, dict] = {
                          "[placeholder*=描述], [placeholder*=作品], [class*=editor][contenteditable]",
              "value": "180000"},
             # 快手新手引导（react-joyride）有时会挡住描述框，headless 下无法手动关闭；
-            # 只移除引导浮层，不触碰业务表单内容。
+            # 只移除引导浮层，不触碰业务表单内容。另注入常驻 CSS 关闭开关（React 重渲染会
+            # 把浮层加回来，remove 只管一次；CSS !important 才压得住后续重渲染）。
             {"action": "js_eval",
              "value": """() => {
                  for (const sel of ['#react-joyride-portal','.react-joyride__overlay','.react-joyride__spotlight']) {
@@ -113,6 +114,13 @@ PLATFORMS: dict[str, dict] = {
                      const cls = (el.className || '').toString();
                      if (cls.includes('joyride')) el.remove();
                  });
+                 if (!document.getElementById('__easel_kill_joyride')) {
+                     const st = document.createElement('style');
+                     st.id = '__easel_kill_joyride';
+                     st.textContent = '#react-joyride-portal,.react-joyride__overlay,'
+                                    + '.react-joyride__spotlight{display:none !important;pointer-events:none !important;}';
+                     document.head.appendChild(st);
+                 }
              }"""},
             {"action": "fill",
              "selector": "textarea, [contenteditable=true], input[placeholder*=描述], [placeholder*=描述]",
@@ -134,6 +142,13 @@ PLATFORMS: dict[str, dict] = {
                      const cls = (el.className || '').toString();
                      if (cls.includes('joyride')) el.remove();
                  });
+                 if (!document.getElementById('__easel_kill_joyride')) {
+                     const st = document.createElement('style');
+                     st.id = '__easel_kill_joyride';
+                     st.textContent = '#react-joyride-portal,.react-joyride__overlay,'
+                                    + '.react-joyride__spotlight{display:none !important;pointer-events:none !important;}';
+                     document.head.appendChild(st);
+                 }
              }"""},
             {"action": "wait", "value": "1000"},
             # 真发布按钮：表单底部『发布』，class 含 _button-primary_<hash>，在 _edit-section-btns_ 容器内。
@@ -240,9 +255,13 @@ PLATFORMS: dict[str, dict] = {
         "login_probe_url": "https://www.zhihu.com/",
         "publish_url": "https://zhuanlan.zhihu.com/write",
         "profile": "ZhihuProfile",
-        "login_check": ".AppHeader-profile, .AppHeader-userInfo",
+        # 发布页（zhuanlan.zhihu.com/write）不渲染 .AppHeader-profile/.AppHeader-userInfo（实测 count=0），
+        # strict 模式下会导致已登录被判成未登录 → 加入写作页强选择器；www 域名下的 profile 选择器保留。
+        "login_check": ".WriteIndex-titleInput, .public-DraftEditor-content, "
+                       ".AppHeader-profile, .AppHeader-userInfo",
         "login_strict": True,
-        "logged_out_selector": ".SignContainer, .Login-content, button:has-text('登录')",
+        # 收紧：去掉泛 button:has-text('登录')（写作页工具栏含「登录」类文本，会误判未登录）
+        "logged_out_selector": ".SignContainer, .Login-content, .SignFlowModal, .SignFlow-accountInput",
         "login_qr_switch": "button:has-text('扫码登录'), [role='tab']:has-text('扫码登录'), "
                            ".SignFlow-qrcodeTab, .SignFlow-tab--qrcode, .SignFlow-switch:has-text('扫码')",
         "login_qr_selector": ".Qrcode-img, .SignFlow-qrcode, .SignFlowQRCode, "
@@ -396,7 +415,10 @@ def _first_visible_el(page, sel: str):
 
 
 def _fill_first_visible(page, sel: str, val: str) -> None:
-    """填写多候选目标，自动兼容 contenteditable（富文本用键入，input/textarea 用 fill）。"""
+    """填写多候选目标，自动兼容 contenteditable（富文本用键入，input/textarea 用 fill）。
+
+    快手等平台的新手引导浮层（react-joyride）会拦截普通点击 → 此时降级为 JS 聚焦/派发事件
+    或 force 点击，绕开指针命中检测（脚本仍只写业务表单，不触碰其它元素）。"""
     el = _first_visible_el(page, sel)
     if el is None:
         raise RuntimeError(f"填写目标未找到：{sel}")
@@ -406,10 +428,21 @@ def _fill_first_visible(page, sel: str, val: str) -> None:
     except Exception:
         pass
     if editable:
-        el.click()
+        try:
+            el.click(timeout=5000)
+        except Exception:
+            try:
+                el.evaluate("e => { e.focus(); e.click(); }")
+            except Exception:
+                el.click(force=True, timeout=5000)
         page.keyboard.type(val)
     else:
-        el.fill(val)
+        try:
+            el.fill(val)
+        except Exception:
+            el.evaluate("(e, v) => { e.focus(); e.value = v; "
+                        "e.dispatchEvent(new Event('input', {bubbles: true})); "
+                        "e.dispatchEvent(new Event('change', {bubbles: true})); }", val)
 
 
 def _publish_weixin_channels(page, ctx: dict) -> None:
