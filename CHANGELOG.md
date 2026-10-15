@@ -13,6 +13,7 @@ All notable changes to Easel are documented in this file.
 - Fixed Kuaishou video publishing being blocked by the react-joyride onboarding overlay: the overlay is cleared before filling the description and again before submitting, and a persistent CSS kill-switch suppresses re-renders that reintroduce it.
 - Fixed form filling on both contenteditable and input targets when a page overlay intercepts pointer events: clicks now fall back to JS focus/dispatch or forced clicks instead of timing out.
 - Fixed Zhihu publishing being reported as "not logged in" because the write page does not render the site-header profile selectors; login detection now also accepts the write-page title/editor selectors, and the logged-out selector was tightened to real sign-in containers.
+- Fixed Zhihu login detection returning false negatives after the 2026 header redesign: `.AppHeader-profile` / `.AppHeader-userInfo` no longer render, so logged-in sessions were treated as logged out and the QR login flow failed with "未找到可识别的登录二维码". `login_check` / `me_avatar_selector` now also match `.AppHeader .Avatar`, and `whoami` falls back to the same-origin `api/v4/me` endpoint when the header renders no nickname.
 
 ## [0.3.0] - 2026-10-12
 
