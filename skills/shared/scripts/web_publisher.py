@@ -30,6 +30,7 @@ from __future__ import annotations
 import argparse
 import html as _htmllib
 import json
+import os
 import re
 import signal
 import sys
@@ -302,6 +303,21 @@ LAUNCH_ARGS = [
     "--disable-features=TranslateUI,BackForwardCache",
     "--mute-audio", "--no-first-run", "--no-default-browser-check",
 ]
+
+# 本机环境适配（Muse VM）：无直连外网，经由本地中转代理出站。
+# 设置 EASEL_BROWSER_PROXY=http://127.0.0.1:8888（见 scripts/proxy_relay.py）
+# 则 Chromium 走该代理并忽略出口代理的 MITM 证书；不设置则保持上游默认直连。
+_BROWSER_PROXY = os.environ.get("EASEL_BROWSER_PROXY", "").strip()
+_PROXY_ARGS = [] if _BROWSER_PROXY else ["--no-proxy-server"]
+
+
+def _browser_kwargs(headless=True, headed=False):
+    kw = dict(headless=(not headed if headed else headless),
+              args=LAUNCH_ARGS + _PROXY_ARGS)
+    if _BROWSER_PROXY:
+        kw["proxy"] = {"server": _BROWSER_PROXY}
+        kw["ignore_https_errors"] = True
+    return kw
 
 
 def _block_heavy(context, platform: str, login_assets: bool = True) -> None:
@@ -707,9 +723,8 @@ def _run_browser(a, headed: bool, do_publish: bool) -> int:
     ctx = {"media": a.media or "", "title": a.title or "", "desc": a.desc or "",
            "tags": a.tags or "", "cover": a.cover or ""}
     with sync_playwright() as p:
-        browser = p.chromium.launch_persistent_context(
-            str(profile), headless=not headed, args=LAUNCH_ARGS + ["--no-proxy-server"],
-            viewport={"width": 1440, "height": 900})
+        kw = _browser_kwargs(headed=headed); kw["viewport"] = {"width": 1440, "height": 900}
+        browser = p.chromium.launch_persistent_context(str(profile), **kw)
         page = browser.pages[0] if browser.pages else browser.new_page()
         if not do_publish:
             page.goto(cfg["login_url"])
@@ -1487,9 +1502,8 @@ def cmd_login_qr(a) -> int:
 
         try:
             signal.signal(signal.SIGTERM, stop_login)
-            browser = p.chromium.launch_persistent_context(
-                str(profile), headless=True, locale="zh-CN",
-                args=LAUNCH_ARGS + ["--no-proxy-server"])
+            kw = _browser_kwargs(); kw["locale"] = "zh-CN"
+            browser = p.chromium.launch_persistent_context(str(profile), **kw)
             page = browser.pages[0] if browser.pages else browser.new_page()
             _block_heavy(browser, a.platform)
             _observe_channels_account(browser, cfg)
@@ -1689,9 +1703,8 @@ def cmd_whoami(a) -> int:
         with sync_playwright() as p:
             profile = _profile_dir(a.platform, a.profile_base)
             profile.mkdir(parents=True, exist_ok=True)
-            browser = p.chromium.launch_persistent_context(
-                str(profile), headless=True, locale="zh-CN",
-                args=LAUNCH_ARGS + ["--no-proxy-server"])
+            kw = _browser_kwargs(); kw["locale"] = "zh-CN"
+            browser = p.chromium.launch_persistent_context(str(profile), **kw)
             page = browser.pages[0] if browser.pages else browser.new_page()
             try:
                 _block_heavy(browser, a.platform, login_assets=False)
