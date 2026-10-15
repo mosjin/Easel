@@ -87,3 +87,7 @@ skills/builtin/video-production/vendor/**/node_modules/
 skills/builtin/video-production/vendor/**/.remotion/
 skills/builtin/video-production/vendor/**/models/
 skills/builtin/video-production/vendor/**/*large-v3*
+
+# .env 的时间戳备份（*.bak 匹配不到 .env.bak.<ts>，防止 git add -A 误提交密钥）
+.env.bak.*
+.env*.bak*
