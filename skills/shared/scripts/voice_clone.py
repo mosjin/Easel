@@ -346,13 +346,20 @@ def clone_dashscope(a, out: Path) -> Path:
     if not a.voice_id:
         fail("dashscope 合成需 --voice-id（先 enroll 声音复刻）。")
     inp: dict[str, Any] = {"text": a.text, "voice": a.voice_id}
-    instr = instruct_text(getattr(a, "emotion", None))
-    if instr:
-        inp["instruct"] = instr   # CosyVoice v2 自然语言情感指令（best-effort，网关忽略未知字段）
-    resp = http_json(f"{base}/api/v1/services/audio/tts/generation",
-                     {"Authorization": f"Bearer {key}"},
-                     {"model": model, "input": inp,
-                      "parameters": {"format": out.suffix.lstrip(".") or "mp3"}})
+    if model.startswith("qwen"):
+        # Qwen-TTS 系列（如 qwen3-tts-flash）走多模态端点，预置音色名（如 Dylan）直接作 voice；
+        # 打 /services/audio/tts/generation 会报 "url error"（该端点只认 CosyVoice 声音复刻）。
+        resp = http_json(f"{base}/api/v1/services/aigc/multimodal-generation/generation",
+                         {"Authorization": f"Bearer {key}"},
+                         {"model": model, "input": inp})
+    else:
+        instr = instruct_text(getattr(a, "emotion", None))
+        if instr:
+            inp["instruct"] = instr   # CosyVoice v2 自然语言情感指令（best-effort，网关忽略未知字段）
+        resp = http_json(f"{base}/api/v1/services/audio/tts/generation",
+                         {"Authorization": f"Bearer {key}"},
+                         {"model": model, "input": inp,
+                          "parameters": {"format": out.suffix.lstrip(".") or "mp3"}})
     url = _find_url(resp)
     if url:
         return download(url, out)
