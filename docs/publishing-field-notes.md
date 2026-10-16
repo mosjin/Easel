@@ -104,3 +104,9 @@
 **回读校验法**：草稿箱列表页（`t=media/appmsg_list&type=10&action=list_card`，或点左栏「草稿箱」）的内联脚本 `window.wx.cgiData` 里每篇带 `copyright_type`（0=未声明）。比 UI 文案可靠。
 
 **落地**：`publish.py` 与发布流程不做原创声明，**群发前在编辑器人工点一次「原创」→ 勾协议 → 确定**。发布清单里按此项记「待手动」。
+
+**补充（2026-10-16 实战：知乎发「双11 AI 算账」）**：
+
+- **运行时根的 `web_publisher.py` 可能是旧版**：`/home/jin/works/Easel`（停在 `main`）的 zhihu 正文步当初还是 `{"action":"type"}`，会**把 `**`/`###` 原样打出**；带 `paste_md` 的版本只在 `easel_me` main。发布前先 `grep -c paste_md <运行时根>/skills/shared/scripts/web_publisher.py`，为 0 就从 `easel_me` 同步该文件再发（本轮实测：同步后发布成功）。
+- **粘贴的 `<strong>` 可能被丢**：`paste_md` 能把 Markdown 转成段落（实测 21 段、0 处 `**`/`#` 残留），但整行加粗的小标题**不一定保留**（截图/回读都看不到 `<strong>`）。补法：编辑页**三击**选中该行 → `Ctrl+B`（编辑器内 `<span style="font-weight:bold">`）或点工具栏 `button[aria-label='加粗']`；**点「更新」必须用真实点击**（Playwright `locator.click()`），用 JS `.click()` 会**丢最后一次格式改动**（实测反复只丢同一段）。
+- **回读判据**：公开页 `h1` 标题 + `strong/b` 文本列表 + `p` 段数 + `**`/`^#` 残留数；作者端编辑页 `[data-block=true]` 里 `span[style*="font-weight"]` 判加粗（Draft.js 用内联 style，不是 `<strong>`）。
