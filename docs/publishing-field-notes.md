@@ -87,3 +87,20 @@
 - 做法：把封面图**覆盖在成片开头约 0.1 秒**，随后立刻回到正片；**不插入新帧、不延长时长、不动音轨、不改字幕时间轴**。
 - 校验：抽首帧与封面比对（平均像素差应很小），再抽封面结束后一帧确认已回到正片，并比对修改前后的时长与音轨。
 - 工具：`skills/shared/scripts/cover_head.py`（`add` / `check` / `off` / `selftest`）。用户明确要求「不加封面」时跳过此步。
+
+---
+
+## 七、微信公众号「原创声明」目前无法自动化（2026-10-16 实测）
+
+目标：在 `skill-wechat-publisher` 建好草稿后，自动把文章声明的原创打上（全局规则「能原创的都原创」）。
+
+**结论：做不到，改为人工一点。** mp 编辑器（`appmsg_edit_v2&appmsgid=<id>`）里确有原创开关：
+
+- 开关节点：`#js_original .js_original_apply`（`未声明 / 已声明` 两态，`#js_original_open` 为已声明块）。
+- 点开关弹出的声明弹窗含：`声明类型`（`文字原创` 默认选中 / `无需声明`）、`作者`、`白名单`、`快捷转载`、`我已阅读并同意《…协议》`、`确定 / 取消`。
+- 但 Playwright 里完成「勾协议 → 点确定」后，**声明不生效**：`body` 里 `已声明` 仍为 False，草稿卡片 `window.wx.cgiData` 中 `"copyright_type": 0`。headless 与 headed（有 X display）均复现；`确定` 有时甚至不关弹窗。
+- 编辑器首屏的运营引导浮层（`.education-dialog` / `.weui-desktop-dialog__wrp`「支持添加话题卡片|我知道了」）会拦截点击，需先移除。
+
+**回读校验法**：草稿箱列表页（`t=media/appmsg_list&type=10&action=list_card`，或点左栏「草稿箱」）的内联脚本 `window.wx.cgiData` 里每篇带 `copyright_type`（0=未声明）。比 UI 文案可靠。
+
+**落地**：`publish.py` 与发布流程不做原创声明，**群发前在编辑器人工点一次「原创」→ 勾协议 → 确定**。发布清单里按此项记「待手动」。
