@@ -52,7 +52,7 @@ from pathlib import Path
 # ============================================================
 
 DEFAULT_STYLES = {
-    "body": "font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif; font-size: 15.5px; color: #242832; line-height: 1.75; letter-spacing: 0.4px; word-spacing: 1.5px; padding: 12px 0;",
+    "body": "font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif; font-size: 16px; color: #242832; line-height: 1.75; letter-spacing: 0.4px; word-spacing: 1.5px; padding: 12px 0;",
     "h1": "font-size: 22px; font-weight: 800; color: #0b1530; text-align: left; margin: 32px 0 20px; padding: 0 0 12px 0; border-bottom: 2px solid #0b1530; letter-spacing: 0.5px; line-height: 1.4;",
     "h2": "font-size: 18px; font-weight: 700; color: #0b1530; margin: 36px 0 16px; padding: 10px 0 10px 14px; border-left: 4px solid #2e5bff; background: linear-gradient(90deg, #eef2ff 0%, #ffffff 70%); border-radius: 0 6px 6px 0; line-height: 1.5; letter-spacing: 0.3px;",
     "h3": "font-size: 16px; font-weight: 700; color: #1a2240; margin: 26px 0 12px; padding: 0 0 6px 0; border-bottom: 1px dashed #c7d2fe; letter-spacing: 0.3px;",

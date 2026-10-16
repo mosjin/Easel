@@ -2,10 +2,10 @@
   "theme_name": "business-navy",
   "description": "商务蓝金 - 深蓝主色 + 金色点缀,权威克制的金融感,适合商业 / 投研 / 行业分析",
   "styles": {
-    "body": "font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif; font-size: 15.5px; color: #0f1a33; line-height: 1.8; letter-spacing: 0.35px; word-spacing: 1.5px; padding: 20px 22px; background: #ffffff;",
+    "body": "font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif; font-size: 16px; color: #0f1a33; line-height: 1.8; letter-spacing: 0.35px; word-spacing: 1.5px; padding: 20px 22px; background: #ffffff;",
     "h1": "font-size: 23px; font-weight: 800; color: #0b2445; text-align: left; margin: 34px 0 20px; padding: 0 0 14px 0; border-bottom: 3px double #0b2445; letter-spacing: 0.4px; line-height: 1.4;",
     "h2": "font-size: 18px; font-weight: 800; color: #0b2445; margin: 40px 0 18px; padding: 2px 0 2px 16px; border-left: 4px solid #c9a74a; line-height: 1.5; letter-spacing: 0.3px;",
-    "h3": "font-size: 15.5px; font-weight: 700; color: #0b2445; margin: 28px 0 12px; padding: 0; letter-spacing: 0.3px;",
+    "h3": "font-size: 17px; font-weight: 700; color: #0b2445; margin: 28px 0 12px; padding: 0; letter-spacing: 0.3px;",
     "p": "margin: 16px 0; text-indent: 0; text-align: justify; color: #1a233a; line-height: 1.85;",
     "blockquote": "margin: 24px 0; padding: 18px 22px; background: #f4f6fb; border-left: 3px solid #c9a74a; color: #2a3552; font-size: 14.5px; border-radius: 0; line-height: 1.85; letter-spacing: 0.3px;",
     "img": "max-width: 100%; height: auto; border-radius: 2px; margin: 24px auto; display: block; box-shadow: 0 6px 20px rgba(11,36,69,0.1); border: 1px solid #e0e5ee;",

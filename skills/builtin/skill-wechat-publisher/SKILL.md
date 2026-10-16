@@ -25,6 +25,10 @@ layer: publish
 
 核心链路（写作→排版→反 AI 检测→发草稿）的 Markdown / HTML 入口默认复用已扫码的公众号后台会话，不要求 `wechat-publisher.yaml` 或 `app_id`/`app_secret`；仅显式选择 `--official-api` 时需要官方 API 凭证。配图缺 key 时改用外部生图或跳过，多平台同步默认不启用。
 
+## 排版默认字号（全局规则）
+
+**正文默认 16px**（2026-10-16 起）。`assets/themes/*.json` 的 `styles.body` 全部为 `font-size: 16px`，`html_converter.py` 的 `DEFAULT_STYLES["body"]` 同为 16px；小标题不小于正文（h3 ≥ 17px），10–12.5px 仅用于分节符/脚注等装饰。改主题或新增主题时不要低于 16px。
+
 ## 账号与人格
 
 YAML 示例提供 2 个账号配置：`main`（刷屏AI / 飞哥 / `refined-blue`，热情北京口语，面向 AI 产品）与 `tech`（蒜是哪根葱 / 葱哥 / `minimal-mono`，冷幽默技术直男，面向工程实践）。官方 API 模式按 `--account` 或 YAML 的 `default` 选择账号。后台会话模式的实际发布账号以当前扫码登录的公众号为准，`--account` 不会切换浏览器登录态；没有 YAML 时，可用 `--author` / `--theme` 指定署名和主题，并优先使用当前 Easel Profile 的语气。
