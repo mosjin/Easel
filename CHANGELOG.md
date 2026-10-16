@@ -6,6 +6,7 @@ All notable changes to Easel are documented in this file.
 
 ### Added
 
+- Added `skills/shared/scripts/cover_head.py`, which overlays the cover art on the first ~0.1s of a finished video so platforms that grab the first frame show the cover. It keeps duration, audio and the subtitle timeline untouched (`add` / `check` / `off` / `selftest`).
 - Added `skills/shared/scripts/img_no_watermark.py`, a deterministic AI-image watermark remover (detect / cover / process / gen) that keeps the original file intact and restores the target aspect ratio.
 
 ### Fixed
