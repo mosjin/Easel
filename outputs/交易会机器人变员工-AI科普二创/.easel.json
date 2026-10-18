@@ -1,0 +1,96 @@
+{
+  "topic": "交易会机器人变员工-AI科普二创",
+  "profile": "AI科普",
+  "created": "2026-10-18T17:17:38+08:00",
+  "updated": "2026-10-18T18:38:22+08:00",
+  "steps": [
+    {
+      "layer": "plan",
+      "skill": "skill-topic-evaluator",
+      "at": "2026-10-18T17:17:38+08:00",
+      "status": "done",
+      "outputs": [
+        "事实核验与原文链接.md",
+        "选题评估与二创方案.md"
+      ],
+      "upstream": [],
+      "summary": "先核验后创作；赛道高匹配，综合73/100，做；采用上岗体检角度"
+    },
+    {
+      "layer": "produce",
+      "skill": "social-content",
+      "at": "2026-10-18T17:17:38+08:00",
+      "status": "done",
+      "outputs": [
+        "公众号_文案初稿.md",
+        "视频号_口播初稿.md"
+      ],
+      "upstream": [],
+      "summary": "公众号约1047字、视频号约50秒；已按全局规则去除具体媒体名与展会名"
+    },
+    {
+      "layer": "produce",
+      "skill": "taste-writing-zh",
+      "at": "2026-10-18T17:53:52+08:00",
+      "status": "done",
+      "outputs": [
+        "公众号_文案初稿.md",
+        "视频号_口播初稿.md"
+      ],
+      "upstream": [],
+      "summary": "按43篇公众号语料统一声音与段落节奏；公众号AI味4.0/100，1434字；口播5.2/100；安全扫描通过"
+    },
+    {
+      "layer": "produce",
+      "skill": "card-design",
+      "at": "2026-10-18T18:02:19+08:00",
+      "status": "done",
+      "outputs": [
+        "交易会机器人变员工_封面_2.35x1_公众号.png"
+      ],
+      "upstream": [],
+      "summary": "公众号封面1200x510排版卡：主文案机器人上岗前先过这三关，副文案交易会观察/AI科普，右侧三关体检表；card_audit PASS"
+    },
+    {
+      "layer": "produce",
+      "skill": "auto-short-video",
+      "at": "2026-10-18T18:16:23+08:00",
+      "status": "done",
+      "outputs": [
+        "交易会机器人变员工_成品_52s_视频号.mp4",
+        "交易会机器人变员工_封面_2.35x1_公众号.png",
+        "交易会机器人变员工_封面_1x1_公众号.png",
+        "交易会机器人变员工_封面_9x16_视频号.png"
+      ],
+      "upstream": [],
+      "summary": "达芬奇手稿风封面两版加竖版；52.1s竖版成片，Dylan配音，关键词高亮字幕"
+    },
+    {
+      "layer": "produce",
+      "skill": "tts-voiceover",
+      "at": "2026-10-18T18:38:22+08:00",
+      "status": "done",
+      "outputs": [
+        "交易会机器人变员工_成品_53s_视频号.mp4"
+      ],
+      "upstream": [],
+      "summary": "修正配音源：dashscope qwen3-tts-flash Dylan 重配52.8s；逐句WAV拼接消除mp3填充漂移，字幕轴按真实时长重算；ASS手动换行+深墨字浅色描边"
+    }
+  ],
+  "title": "交易会机器人变员工：上岗前先过三关",
+  "summary": "事实核验+热点适配判断+3个二创角度+公众号/视频号文案初稿",
+  "platform": "公众号,视频号",
+  "kind": "article",
+  "status": "draft",
+  "tags": [
+    "交易会",
+    "机器人",
+    "具身智能",
+    "AI科普"
+  ],
+  "deliverables": [
+    "公众号_文案初稿.md",
+    "视频号_口播初稿.md",
+    "事实核验与原文链接.md"
+  ]
+}

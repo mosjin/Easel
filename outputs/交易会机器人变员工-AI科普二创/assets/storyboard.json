@@ -1,0 +1,36 @@
+{
+  "size": "1080x1920",
+  "image_motion": "static",
+  "pad_mode": "freeze",
+  "narration": "outputs/交易会机器人变员工-AI科普二创/assets/voice_new.m4a",
+  "shots": [
+    {
+      "image": "outputs/交易会机器人变员工-AI科普二创/assets/s1.png",
+      "duration": 12.6
+    },
+    {
+      "image": "outputs/交易会机器人变员工-AI科普二创/assets/s2.png",
+      "duration": 3.48
+    },
+    {
+      "image": "outputs/交易会机器人变员工-AI科普二创/assets/s3.png",
+      "duration": 9.24
+    },
+    {
+      "image": "outputs/交易会机器人变员工-AI科普二创/assets/s4.png",
+      "duration": 6.82
+    },
+    {
+      "image": "outputs/交易会机器人变员工-AI科普二创/assets/s5.png",
+      "duration": 5.64
+    },
+    {
+      "image": "outputs/交易会机器人变员工-AI科普二创/assets/s6.png",
+      "duration": 10.98
+    },
+    {
+      "image": "outputs/交易会机器人变员工-AI科普二创/assets/s7.png",
+      "duration": 3.96
+    }
+  ]
+}

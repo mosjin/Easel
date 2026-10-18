@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<title>交易会机器人变员工 · 达芬奇封面</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body { width: 1200px; height: 510px; overflow: hidden; }
+  body {
+    background: #EFE6D2;
+    color: #2E241C;
+    font-family: "Noto Serif CJK SC", "Songti SC", serif;
+    position: relative;
+  }
+
+  .art { position: absolute; inset: 0; overflow: hidden; }
+  .art img {
+    position: absolute; left: 0; top: 0;
+    width: 100%; height: calc(100% + 44px);
+    object-fit: cover;
+    filter: sepia(.12) contrast(1.03);
+  }
+  .wash {
+    position: absolute; inset: 0;
+    background:
+      linear-gradient(90deg, rgba(239,230,210,.985) 0%, rgba(239,230,210,.97) 40%, rgba(239,230,210,.82) 54%, rgba(239,230,210,0) 70%),
+      radial-gradient(120% 90% at 12% 50%, rgba(239,230,210,.65) 0%, rgba(239,230,210,0) 60%);
+  }
+
+  .content {
+    position: absolute; left: 62px; top: 46px; width: 640px; height: 372px;
+    display: flex; flex-direction: column;
+  }
+
+  .kicker {
+    display: flex; align-items: center; gap: 10px;
+    font-size: 13px; letter-spacing: .26em; color: #7A6A52;
+  }
+  .kicker .rule { width: 34px; height: 1px; background: #8C3B21; }
+  .kicker b { color: #8C3B21; font-weight: 600; letter-spacing: .2em; }
+
+  h1 {
+    margin-top: 20px;
+    font-size: 68px; line-height: 1.16; font-weight: 700;
+    letter-spacing: .01em;
+    color: #2E241C;
+  }
+  h1 em { font-style: normal; color: #8C3B21; }
+
+  .lede {
+    margin-top: 18px;
+    font-size: 20px; line-height: 1.6; color: #5B4B38;
+    letter-spacing: .02em;
+  }
+
+  .checks {
+    margin-top: auto;
+    display: flex; align-items: stretch;
+    border-top: 1px solid rgba(46,36,28,.28);
+  }
+  .chk {
+    flex: 1; padding: 12px 14px 0 0;
+    border-right: 1px solid rgba(46,36,28,.16);
+  }
+  .chk:last-child { border-right: 0; padding-right: 0; }
+  .chk .no {
+    font-family: "Noto Serif CJK SC", serif;
+    font-size: 11px; letter-spacing: .2em; color: #8C3B21;
+  }
+  .chk .txt { margin-top: 5px; font-size: 17px; line-height: 1.4; color: #2E241C; }
+
+  .sign {
+    position: absolute; left: 62px; bottom: 26px;
+    font-size: 12px; letter-spacing: .18em; color: #6E5E48;
+  }
+
+  .folio {
+    position: absolute; right: 62px; bottom: 24px;
+    text-align: right;
+    font-size: 11px; letter-spacing: .22em; color: #6E5E48;
+  }
+  .folio .big { display: block; font-size: 15px; letter-spacing: .1em; color: #3A2E23; }
+
+</style>
+</head>
+<body>
+  <div class="art"><img src="davinci_raw.png" alt=""></div>
+  <div class="wash"></div>
+
+  <div class="content">
+    <div class="kicker"><span class="rule"></span><span>交易会观察</span><b>AI 科普</b></div>
+
+    <h1>机器人上岗前<br><em>先过这三关</em></h1>
+
+    <p class="lede">展馆，是机器人最容易考满分的考场。</p>
+
+    <div class="checks">
+      <div class="chk">
+        <div class="no">I</div>
+        <div class="txt">连续干八小时</div>
+      </div>
+      <div class="chk">
+        <div class="no">II</div>
+        <div class="txt">普通人半天学会</div>
+      </div>
+      <div class="chk">
+        <div class="no">III</div>
+        <div class="txt">出错有人兜底</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="sign">小宁静致远 · 公众号</div>
+  <div class="folio"><span class="big">手稿 No.140</span>2026.10</div>
+</body>
+</html>

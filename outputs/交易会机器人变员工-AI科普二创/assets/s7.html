@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><style>
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{width:1080px;height:1920px;overflow:hidden}
+body{background:#F1E8D6;color:#2E241C;font-family:"Noto Serif CJK SC","Songti SC",serif;position:relative}
+.bg{position:absolute;inset:0;overflow:hidden}
+.bg img{width:100%;height:100%;object-fit:cover;opacity:.09;filter:sepia(.2)}
+.veil{position:absolute;inset:0;background:radial-gradient(120% 80% at 50% 40%,rgba(241,232,214,.55),rgba(241,232,214,.92) 70%,#F1E8D6 100%)}
+.frame{position:absolute;inset:40px;border:1px solid rgba(46,36,28,.28)}
+.frame:before,.frame:after{content:"";position:absolute;width:14px;height:14px;background:#8C3B21}
+.frame:before{left:-1px;top:-1px} .frame:after{right:-1px;bottom:-1px}
+.top{position:absolute;left:76px;right:76px;top:72px;display:flex;justify-content:space-between;font-size:22px;letter-spacing:.22em;color:#7A6A52}
+.top b{color:#8C3B21;font-weight:600}
+.body{position:absolute;left:90px;right:90px;top:150px;bottom:190px;display:flex;flex-direction:column;justify-content:center}
+.plate{width:100%;height:760px;overflow:hidden;border:1px solid rgba(46,36,28,.25);margin-bottom:70px}
+.plate img{width:100%;height:100%;object-fit:cover;object-position:72% 42%;filter:sepia(.1) contrast(1.03)}
+h1{font-size:86px;line-height:1.24;font-weight:700;letter-spacing:.01em}
+h1 em{font-style:normal;color:#8C3B21}
+.sub{margin-top:44px;font-size:34px;line-height:1.66;color:#5B4B38;letter-spacing:.02em}
+.checks{margin-top:56px;border-top:1px solid rgba(46,36,28,.3)}
+.row{display:flex;align-items:baseline;gap:28px;padding:26px 0;border-bottom:1px solid rgba(46,36,28,.16)}
+.row .no{font-size:24px;letter-spacing:.18em;color:#8C3B21;min-width:52px}
+.row .t{font-size:40px;line-height:1.3}
+.foot{position:absolute;left:76px;right:76px;bottom:74px;display:flex;justify-content:space-between;font-size:22px;letter-spacing:.16em;color:#6E5E48}
+</style></head><body>
+<div class="bg"><img src="davinci_raw.png" alt=""></div><div class="veil"></div><div class="frame"></div>
+<div class="top"><span>交易会观察 · <b>AI 科普</b></span><span>07 / 07</span></div>
+<div class="body"><h1>你身边哪个岗位<br>最容易被<em>拆</em>？</h1><div class="sub">评论区聊聊。</div></div>
+<div class="foot"><span>小宁静致远</span><span>手稿 NO.140</span></div>
+</body></html>

@@ -1,0 +1,211 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<title>交易会机器人变员工 · 公众号封面</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body { width: 1200px; height: 510px; overflow: hidden; }
+  body {
+    background: #F2EDE3;
+    color: #14213D;
+    font-family: "Noto Sans CJK SC", "Noto Sans SC", "Microsoft YaHei", sans-serif;
+    position: relative;
+  }
+  .rules {
+    position: absolute; inset: 0;
+    background-image: linear-gradient(to bottom, rgba(20,33,61,.055) 1px, transparent 1px);
+    background-size: 100% 34px;
+  }
+  .frame {
+    position: absolute; inset: 26px;
+    border: 1px solid rgba(20,33,61,.22);
+  }
+  .frame::before, .frame::after {
+    content: ""; position: absolute; width: 10px; height: 10px;
+    background: #D9480F;
+  }
+  .frame::before { left: -1px; top: -1px; }
+  .frame::after { right: -1px; bottom: -1px; }
+
+  .content {
+    position: absolute; inset: 52px 58px 42px 58px;
+    display: flex; gap: 46px;
+  }
+
+  .left { width: 650px; display: flex; flex-direction: column; }
+
+  .kicker {
+    display: flex; align-items: center; gap: 12px;
+    font-family: "Noto Sans Mono", "DejaVu Sans Mono", monospace;
+    font-size: 14px; letter-spacing: .18em; color: #6B6560;
+  }
+  .kicker .bar { width: 48px; height: 2px; background: #D9480F; }
+  .kicker b { color: #D9480F; font-weight: 700; letter-spacing: .12em; }
+
+  h1 {
+    margin-top: 24px;
+    font-size: 74px;
+    line-height: 1.12;
+    font-weight: 300;
+    letter-spacing: -.02em;
+    white-space: nowrap;
+  }
+  h1 .em { font-weight: 700; color: #D9480F; }
+
+  .sub {
+    margin-top: 18px;
+    font-size: 20px;
+    line-height: 1.55;
+    color: #4A5568;
+    letter-spacing: .01em;
+  }
+
+  .pull {
+    margin-top: 26px;
+    padding-top: 14px;
+    border-top: 1px solid rgba(20,33,61,.22);
+    display: flex;
+    gap: 18px;
+  }
+  .pull-k {
+    flex: none;
+    padding-top: 4px;
+    font-family: "Noto Sans Mono", "DejaVu Sans Mono", monospace;
+    font-size: 11px;
+    letter-spacing: .14em;
+    color: #D9480F;
+  }
+  .pull-t {
+    font-size: 23px;
+    line-height: 1.5;
+    font-weight: 300;
+    color: #14213D;
+    letter-spacing: .01em;
+  }
+
+  .foot {
+    margin-top: auto;
+    display: flex; align-items: flex-end; justify-content: space-between;
+  }
+  .name { font-size: 17px; font-weight: 500; letter-spacing: .05em; }
+  .meta {
+    font-family: "Noto Sans Mono", "DejaVu Sans Mono", monospace;
+    font-size: 12px; letter-spacing: .14em; color: #6B6560;
+  }
+
+  .right {
+    flex: 1;
+    border-left: 1px solid rgba(20,33,61,.22);
+    padding-left: 34px;
+    display: flex; flex-direction: column;
+  }
+  .card-head {
+    display: flex; align-items: baseline; justify-content: space-between;
+    font-family: "Noto Sans Mono", "DejaVu Sans Mono", monospace;
+    font-size: 12px; letter-spacing: .16em; color: #6B6560;
+  }
+  .card-head .no { color: #D9480F; }
+  .card-title {
+    margin-top: 8px;
+    font-size: 23px; font-weight: 700; letter-spacing: .04em;
+  }
+  .rows { margin-top: 16px; display: flex; flex-direction: column; }
+  .row {
+    display: flex; align-items: center; gap: 12px;
+    padding: 14px 0;
+    border-top: 1px solid rgba(20,33,61,.16);
+  }
+  .row:last-child { border-bottom: 1px solid rgba(20,33,61,.16); }
+  .num {
+    width: 22px;
+    font-family: "Noto Sans Mono", "DejaVu Sans Mono", monospace;
+    font-size: 11px; color: #D9480F; letter-spacing: .04em;
+  }
+  .label { flex: 1; font-size: 19px; font-weight: 500; letter-spacing: .01em; }
+  .box { width: 21px; height: 21px; border: 2px solid #14213D; flex: none; }
+
+  .src {
+    margin-top: 10px;
+    display: flex; align-items: center; justify-content: space-between;
+    font-family: "Noto Sans Mono", "DejaVu Sans Mono", monospace;
+    font-size: 11px; letter-spacing: .1em; color: #8A8378;
+  }
+
+  .status {
+    margin-top: auto;
+    display: flex; align-items: center; gap: 10px;
+    font-family: "Noto Sans Mono", "DejaVu Sans Mono", monospace;
+    font-size: 12px; letter-spacing: .14em; color: #6B6560;
+  }
+  .note {
+    margin-top: 18px;
+    border-left: 2px solid #D9480F;
+    padding-left: 10px;
+    font-size: 15px;
+    line-height: 1.7;
+    color: #4A5568;
+  }
+  .dot { width: 8px; height: 8px; background: #D9480F; }
+</style>
+</head>
+<body>
+  <div class="rules"></div>
+  <div class="frame"></div>
+
+  <div class="content">
+    <div class="left">
+      <div class="kicker">
+        <span class="bar"></span>
+        <span>交易会观察</span>
+        <b>AI 科普</b>
+      </div>
+
+      <h1>机器人上岗前<br><span class="em">先过这三关</span></h1>
+
+      <p class="sub">展馆里会演示，不等于岗位上能干。</p>
+
+      <div class="pull">
+        <div class="pull-k">现场判断</div>
+        <div class="pull-t">展馆，是机器人<br>最容易考满分的考场。</div>
+      </div>
+
+      <div class="foot">
+        <div class="name">小宁静致远</div>
+        <div class="meta">公众号 · 2026.10</div>
+      </div>
+    </div>
+
+    <div class="right">
+      <div class="card-head">
+        <span>上岗体检表</span>
+        <span class="no">NO. 140</span>
+      </div>
+      <div class="card-title">三关，缺一不可</div>
+
+      <div class="rows">
+        <div class="row">
+          <div class="num">01</div>
+          <div class="label">连续干 8 小时</div>
+          <div class="box"></div>
+        </div>
+        <div class="row">
+          <div class="num">02</div>
+          <div class="label">普通人半天学会</div>
+          <div class="box"></div>
+        </div>
+        <div class="row">
+          <div class="num">03</div>
+          <div class="label">出错有人兜底</div>
+          <div class="box"></div>
+        </div>
+      </div>
+
+      <div class="note">三关全过，才叫员工。<br>过不了，还是展品。</div>
+
+      <div class="status"><span class="dot"></span><span>STATUS / 待检</span></div>
+      <div class="src"><span>来源 / 公开报道整理</span><span>@小宁静致远</span></div>
+    </div>
+  </div>
+</body>
+</html>
