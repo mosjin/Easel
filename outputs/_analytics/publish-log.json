@@ -1,0 +1,1149 @@
+{
+  "version": "1.0",
+  "entries": [
+    {
+      "id": 1,
+      "platform": "小红书",
+      "title": "补贴到账？先别点⚠️三条挡住骗局",
+      "url": "https://www.xiaohongshu.com/explore/6accf49f000000001a0237a8",
+      "type": "图文",
+      "published_at": "2026-10-12T22:34:25+08:00",
+      "logged_at": "2026-10-12T22:34:25+08:00",
+      "initial_metrics": {
+        "views": null,
+        "likes": null,
+        "comments": null,
+        "shares": null
+      },
+      "skill_source": "skill-xhs-publisher",
+      "profile": "AI科普",
+      "persona_check": {
+        "score": 94,
+        "verdict": "pass"
+      },
+      "tags": [
+        "反诈",
+        "AI科普",
+        "补贴申领",
+        "给长辈看看"
+      ],
+      "notes": "3图：cover_xhs(品牌名=鱼儿钓猫)+shot3+shot6(96110/拨号界面)；标题20字内；已补标原创声明"
+    },
+    {
+      "id": 3,
+      "platform": "B站",
+      "title": "补贴到账？先别点｜骗子也用上 AI 了，怎么识别",
+      "url": "https://www.bilibili.com/video/BV1dkpR6rE5z",
+      "type": "视频",
+      "published_at": "2026-10-12T22:56:14+08:00",
+      "logged_at": "2026-10-12T22:56:14+08:00",
+      "initial_metrics": {
+        "views": null,
+        "likes": null,
+        "comments": null,
+        "shares": null
+      },
+      "skill_source": "calendar-auto",
+      "profile": "",
+      "persona_check": {
+        "score": null,
+        "verdict": ""
+      },
+      "tags": [
+        "反诈",
+        "AI科普",
+        "网络安全",
+        "96110"
+      ],
+      "notes": "分区知识(tid36)；自制(原创)；读回 BV1dkpR6rE5z；原创标识：copyright=1 自制(原创)，API 回读确认"
+    },
+    {
+      "id": 4,
+      "platform": "快手",
+      "title": "补贴到账？先别点，记住三条就能挡住大部分\"补贴申领\"骗局",
+      "url": "https://www.kuaishou.com/profile",
+      "type": "视频",
+      "published_at": "2026-10-12T23:13:35+08:00",
+      "logged_at": "2026-10-12T23:13:35+08:00",
+      "initial_metrics": {
+        "views": null,
+        "likes": null,
+        "comments": null,
+        "shares": null
+      },
+      "skill_source": "calendar-auto",
+      "profile": "",
+      "persona_check": {
+        "score": null,
+        "verdict": ""
+      },
+      "tags": [
+        "#反诈 #AI科普 #补贴申领 #给长辈看看"
+      ],
+      "notes": "作品 id 3xem6kyp5x747qs；账号 小宁静致远；4 话题；读回对账通过；原创标识：web 端无原创声明入口（仅 APP 端）"
+    },
+    {
+      "id": 5,
+      "platform": "抖音",
+      "title": "补贴到账？先别点！这条讲清骗子怎么把钱转走",
+      "url": "",
+      "type": "视频",
+      "published_at": "2026-10-12T23:18:39+08:00",
+      "logged_at": "2026-10-12T23:18:39+08:00",
+      "initial_metrics": {
+        "views": null,
+        "likes": null,
+        "comments": null,
+        "shares": null
+      },
+      "skill_source": "calendar-auto",
+      "profile": "",
+      "persona_check": {
+        "score": null,
+        "verdict": ""
+      },
+      "tags": [
+        "反诈",
+        "AI科普",
+        "补贴申领",
+        "给长辈看看"
+      ],
+      "notes": "作品 7695800850094001450；账号 小宁静致远；发布触发短信墙已过；读回对账通过；原创标识：编辑页仅『自主声明』(AI生成/个人观点/转载/营销/虚构)，无原创项"
+    },
+    {
+      "id": 6,
+      "platform": "知乎",
+      "title": "「补贴申领」链接为什么越来越像真的？聊聊这类骗局的三步套路",
+      "url": "https://zhuanlan.zhihu.com/p/2093118521614063423",
+      "type": "文章",
+      "published_at": "2026-10-12T23:19:08+08:00",
+      "logged_at": "2026-10-12T23:19:08+08:00",
+      "initial_metrics": {
+        "views": null,
+        "likes": null,
+        "comments": null,
+        "shares": null
+      },
+      "skill_source": "calendar-auto",
+      "profile": "",
+      "persona_check": {
+        "score": null,
+        "verdict": ""
+      },
+      "tags": [],
+      "notes": "专栏文章；已跳转 just_published 页；正文已由 Markdown 原文改为富文本排版（修复原样显示）。；原创标识：编辑页仅内容类型声明(剧透/虚构/理财/AI辅助)，无原创项"
+    },
+    {
+      "id": 7,
+      "platform": "微信视频号",
+      "title": "补贴到账？先别点！等补贴的人最容易中招",
+      "url": "",
+      "type": "视频",
+      "published_at": "2026-10-12T23:20:48+08:00",
+      "logged_at": "2026-10-12T23:20:48+08:00",
+      "initial_metrics": {
+        "views": null,
+        "likes": null,
+        "comments": null,
+        "shares": null
+      },
+      "skill_source": "calendar-auto",
+      "profile": "",
+      "persona_check": {
+        "score": null,
+        "verdict": ""
+      },
+      "tags": [
+        "#反诈 #AI科普 #补贴申领 #给长辈看看"
+      ],
+      "notes": "已发表；账号 小宁静致远；读回离开 post/create 跳 post/list"
+    },
+    {
+      "platform": "公众号",
+      "title": "补贴到账？先别点——现在\"看着像官方\"，根本不等于是官方",
+      "url": "",
+      "type": "文章",
+      "published_at": "2026-10-12T23:22:00+08:00",
+      "logged_at": "2026-10-12T23:22:00+08:00",
+      "initial_metrics": {
+        "views": null,
+        "likes": null,
+        "comments": null,
+        "shares": null
+      },
+      "skill_source": "skill-wechat-publisher",
+      "profile": "AI科普",
+      "persona_check": {
+        "score": 94,
+        "verdict": "pass"
+      },
+      "tags": [
+        "反诈",
+        "AI科普",
+        "补贴申领",
+        "给长辈看看"
+      ],
+      "notes": "已发评论区草稿箱 media_id 100003353；AI味 25.8(<45 通过)；需登录 mp.weixin.qq.com 人工群发"
+    },
+    {
+      "id": 8,
+      "platform": "抖音",
+      "title": "AI 画的长征，为什么总差一口气？",
+      "url": "",
+      "type": "视频",
+      "published_at": "2026-10-15T19:39:07+08:00",
+      "logged_at": "2026-10-15T19:39:07+08:00",
+      "initial_metrics": {
+        "views": null,
+        "likes": null,
+        "comments": null,
+        "shares": null
+      },
+      "skill_source": "calendar-auto",
+      "profile": "",
+      "persona_check": {
+        "score": null,
+        "verdict": ""
+      },
+      "tags": [
+        "AI绘画",
+        "AI科普",
+        "AI万里绘征途",
+        "把AI讲明白"
+      ],
+      "notes": ""
+    },
+    {
+      "id": 9,
+      "platform": "知乎",
+      "title": "AI 画出来的历史场景，为什么总差一口气？",
+      "url": "",
+      "type": "文章",
+      "published_at": "2026-10-15T19:41:52+08:00",
+      "logged_at": "2026-10-15T19:41:52+08:00",
+      "initial_metrics": {
+        "views": null,
+        "likes": null,
+        "comments": null,
+        "shares": null
+      },
+      "skill_source": "calendar-auto",
+      "profile": "",
+      "persona_check": {
+        "score": null,
+        "verdict": ""
+      },
+      "tags": [],
+      "notes": ""
+    },
+    {
+      "id": 10,
+      "platform": "微信视频号",
+      "title": "AI 画出的长征，为什么总差一口气？",
+      "url": "",
+      "type": "视频",
+      "published_at": "2026-10-15T19:44:04+08:00",
+      "logged_at": "2026-10-15T19:44:04+08:00",
+      "initial_metrics": {
+        "views": null,
+        "likes": null,
+        "comments": null,
+        "shares": null
+      },
+      "skill_source": "calendar-auto",
+      "profile": "",
+      "persona_check": {
+        "score": null,
+        "verdict": ""
+      },
+      "tags": [
+        "#AI万里绘征途 #AI绘画 #AI科普"
+      ],
+      "notes": ""
+    },
+    {
+      "id": 11,
+      "platform": "快手",
+      "title": "AI 画的长征为什么总差一口气？记住这三步",
+      "url": "",
+      "type": "视频",
+      "published_at": "2026-10-15T19:47:09+08:00",
+      "logged_at": "2026-10-15T19:47:09+08:00",
+      "initial_metrics": {
+        "views": null,
+        "likes": null,
+        "comments": null,
+        "shares": null
+      },
+      "skill_source": "calendar-auto",
+      "profile": "",
+      "persona_check": {
+        "score": null,
+        "verdict": ""
+      },
+      "tags": [
+        "#AI万里绘征途 #AI绘画 #AI科普"
+      ],
+      "notes": ""
+    },
+    {
+      "id": 12,
+      "platform": "B站",
+      "title": "AI 画的长征，为什么总差一口气｜它其实从没见过那段历史",
+      "url": "",
+      "type": "视频",
+      "published_at": "2026-10-15T19:47:48+08:00",
+      "logged_at": "2026-10-15T19:47:48+08:00",
+      "initial_metrics": {
+        "views": null,
+        "likes": null,
+        "comments": null,
+        "shares": null
+      },
+      "skill_source": "calendar-auto",
+      "profile": "",
+      "persona_check": {
+        "score": null,
+        "verdict": ""
+      },
+      "tags": [
+        "AI绘画",
+        "AI科普",
+        "把AI讲明白",
+        "AI万里绘征途"
+      ],
+      "notes": ""
+    },
+    {
+      "id": 13,
+      "platform": "抖音",
+      "title": "AI 画的长征，为什么总差一口气？",
+      "url": "",
+      "type": "视频",
+      "published_at": "2026-10-15T19:48:14+08:00",
+      "logged_at": "2026-10-15T19:48:14+08:00",
+      "initial_metrics": {
+        "views": null,
+        "likes": null,
+        "comments": null,
+        "shares": null
+      },
+      "skill_source": "skill-douyin-upload",
+      "profile": "AI科普",
+      "persona_check": {
+        "score": 92,
+        "verdict": "pass"
+      },
+      "tags": [
+        "AI绘画",
+        "AI科普",
+        "AI万里绘征途"
+      ],
+      "notes": "作品 id 7696857674914319679；1080x1920 竖屏 47.3s；无封面图（用抖音 AI 推荐封面）"
+    },
+    {
+      "id": 14,
+      "platform": "知乎",
+      "title": "AI 画出来的历史场景，为什么总差一口气？",
+      "url": "https://zhuanlan.zhihu.com/p/2094151007701823948",
+      "type": "文章",
+      "published_at": "2026-10-15T19:48:14+08:00",
+      "logged_at": "2026-10-15T19:48:14+08:00",
+      "initial_metrics": {
+        "views": null,
+        "likes": null,
+        "comments": null,
+        "shares": null
+      },
+      "skill_source": "skill-zhihu-publisher",
+      "profile": "AI科普",
+      "persona_check": {
+        "score": 92,
+        "verdict": "pass"
+      },
+      "tags": [
+        "AI绘画",
+        "AI科普"
+      ],
+      "notes": "专栏文章；正文按纯文本粘贴（脚本 paste 走 text/plain，Markdown 语法会原样显示）"
+    },
+    {
+      "id": 15,
+      "platform": "视频号",
+      "title": "AI 画出的长征，为什么总差一口气？",
+      "url": "",
+      "type": "视频",
+      "published_at": "2026-10-15T19:48:14+08:00",
+      "logged_at": "2026-10-15T19:48:14+08:00",
+      "initial_metrics": {
+        "views": null,
+        "likes": null,
+        "comments": null,
+        "shares": null
+      },
+      "skill_source": "skill-channels-upload",
+      "profile": "AI科普",
+      "persona_check": {
+        "score": 92,
+        "verdict": "pass"
+      },
+      "tags": [
+        "AI万里绘征途",
+        "AI绘画",
+        "AI科普"
+      ],
+      "notes": "1080x1920 竖屏；描述含标题+正文+话题"
+    },
+    {
+      "id": 16,
+      "platform": "快手",
+      "title": "AI 画的长征为什么总差一口气？记住这三步",
+      "url": "",
+      "type": "视频",
+      "published_at": "2026-10-15T19:48:14+08:00",
+      "logged_at": "2026-10-15T19:48:14+08:00",
+      "initial_metrics": {
+        "views": null,
+        "likes": null,
+        "comments": null,
+        "shares": null
+      },
+      "skill_source": "skill-kuaishou-upload",
+      "profile": "AI科普",
+      "persona_check": {
+        "score": 92,
+        "verdict": "pass"
+      },
+      "tags": [
+        "AI万里绘征途",
+        "AI绘画",
+        "AI科普"
+      ],
+      "notes": "作品 id 3xavu6sg67mdf9m；读回对账通过；发布前修掉 react-joyride 新手引导遮挡（web_publisher 加常驻 CSS 关闭开关 + 填写降级）"
+    },
+    {
+      "id": 17,
+      "platform": "B站",
+      "title": "AI 画的长征，为什么总差一口气｜它其实从没见过那段历史",
+      "url": "https://www.bilibili.com/video/BV1CAJy6mEu4",
+      "type": "视频",
+      "published_at": "2026-10-15T19:48:14+08:00",
+      "logged_at": "2026-10-15T19:48:14+08:00",
+      "initial_metrics": {
+        "views": null,
+        "likes": null,
+        "comments": null,
+        "shares": null
+      },
+      "skill_source": "skill-bilibili-upload",
+      "profile": "AI科普",
+      "persona_check": {
+        "score": 92,
+        "verdict": "pass"
+      },
+      "tags": [
+        "AI绘画",
+        "AI科普",
+        "把AI讲明白",
+        "AI万里绘征途"
+      ],
+      "notes": "分区 知识；aid 117444756702295；读回核验=审核中；cookie 复用 10-12 登录态"
+    },
+    {
+      "id": 18,
+      "platform": "公众号",
+      "title": "AI 几分钟画出雪山草地，可它其实从没见过那段历史",
+      "url": "",
+      "type": "文章",
+      "published_at": "2026-10-15T19:59:15+08:00",
+      "logged_at": "2026-10-15T19:59:15+08:00",
+      "initial_metrics": {
+        "views": null,
+        "likes": null,
+        "comments": null,
+        "shares": null
+      },
+      "skill_source": "skill-wechat-publisher",
+      "profile": "AI科普",
+      "persona_check": {
+        "score": 92,
+        "verdict": "pass"
+      },
+      "tags": [
+        "AI绘画",
+        "AI科普",
+        "AI万里绘征途"
+      ],
+      "notes": "草稿箱 media_id 100003357；首图 thumb_media_id 100003355（自制 2160x920 / 2.35:1）；走后台会话发布（免 app_secret），仅建草稿不群发"
+    },
+    {
+      "id": 19,
+      "platform": "小红书",
+      "title": "更小的 AI，为什么可能先学会自我复制",
+      "url": "",
+      "type": "图文",
+      "published_at": "2026-10-15T22:46:48+08:00",
+      "logged_at": "2026-10-15T22:46:48+08:00",
+      "initial_metrics": {
+        "views": null,
+        "likes": null,
+        "comments": null,
+        "shares": null
+      },
+      "skill_source": "calendar-auto",
+      "profile": "",
+      "persona_check": {
+        "score": null,
+        "verdict": ""
+      },
+      "tags": [
+        "AI安全",
+        "人工智能",
+        "科技科普",
+        "AI蠕虫",
+        "网络安全",
+        "智能家居"
+      ],
+      "notes": ""
+    },
+    {
+      "id": 20,
+      "platform": "抖音",
+      "title": "更小的 AI，可能先学会“自我复制”",
+      "url": "",
+      "type": "视频",
+      "published_at": "2026-10-15T22:48:10+08:00",
+      "logged_at": "2026-10-15T22:48:10+08:00",
+      "initial_metrics": {
+        "views": null,
+        "likes": null,
+        "comments": null,
+        "shares": null
+      },
+      "skill_source": "calendar-auto",
+      "profile": "",
+      "persona_check": {
+        "score": null,
+        "verdict": ""
+      },
+      "tags": [
+        "AI安全",
+        "人工智能",
+        "科技科普",
+        "网络安全"
+      ],
+      "notes": ""
+    },
+    {
+      "id": 21,
+      "platform": "快手",
+      "title": "更小的 AI，为什么可能先学会“自我复制”",
+      "url": "",
+      "type": "视频",
+      "published_at": "2026-10-15T22:50:30+08:00",
+      "logged_at": "2026-10-15T22:50:30+08:00",
+      "initial_metrics": {
+        "views": null,
+        "likes": null,
+        "comments": null,
+        "shares": null
+      },
+      "skill_source": "calendar-auto",
+      "profile": "",
+      "persona_check": {
+        "score": null,
+        "verdict": ""
+      },
+      "tags": [
+        "#AI安全 #科技科普 #人工智能 #网络安全"
+      ],
+      "notes": ""
+    },
+    {
+      "id": 22,
+      "platform": "微信视频号",
+      "title": "更小的 AI，为什么可能先学会自我复制",
+      "url": "",
+      "type": "视频",
+      "published_at": "2026-10-15T22:51:48+08:00",
+      "logged_at": "2026-10-15T22:51:48+08:00",
+      "initial_metrics": {
+        "views": null,
+        "likes": null,
+        "comments": null,
+        "shares": null
+      },
+      "skill_source": "calendar-auto",
+      "profile": "",
+      "persona_check": {
+        "score": null,
+        "verdict": ""
+      },
+      "tags": [],
+      "notes": ""
+    },
+    {
+      "id": 23,
+      "platform": "B站",
+      "title": "AI 安全科普：更小的 AI，为什么可能先学会“自我复制”",
+      "url": "",
+      "type": "视频",
+      "published_at": "2026-10-15T22:52:15+08:00",
+      "logged_at": "2026-10-15T22:52:15+08:00",
+      "initial_metrics": {
+        "views": null,
+        "likes": null,
+        "comments": null,
+        "shares": null
+      },
+      "skill_source": "calendar-auto",
+      "profile": "",
+      "persona_check": {
+        "score": null,
+        "verdict": ""
+      },
+      "tags": [
+        "AI安全",
+        "人工智能",
+        "科技科普",
+        "网络安全",
+        "AI蠕虫",
+        "智能家居"
+      ],
+      "notes": ""
+    },
+    {
+      "id": 24,
+      "platform": "知乎",
+      "title": "更小的 AI，为什么可能先学会“自我复制”？",
+      "url": "",
+      "type": "文章",
+      "published_at": "2026-10-15T22:52:29+08:00",
+      "logged_at": "2026-10-15T22:52:29+08:00",
+      "initial_metrics": {
+        "views": null,
+        "likes": null,
+        "comments": null,
+        "shares": null
+      },
+      "skill_source": "calendar-auto",
+      "profile": "",
+      "persona_check": {
+        "score": null,
+        "verdict": ""
+      },
+      "tags": [],
+      "notes": ""
+    },
+    {
+      "id": 25,
+      "platform": "公众号",
+      "title": "补贴到账？先别点——现在\"看着像官方\"根本不等于是官方",
+      "url": "https://mp.weixin.qq.com/s/qTSsOJLcLIXi10gwNlUb5g",
+      "type": "图文",
+      "published_at": "2026-10-15T22:54:16+08:00",
+      "logged_at": "2026-10-15T22:54:16+08:00",
+      "initial_metrics": {
+        "views": null,
+        "likes": null,
+        "comments": null,
+        "shares": null
+      },
+      "skill_source": "calendar-auto",
+      "profile": "",
+      "persona_check": {
+        "score": null,
+        "verdict": ""
+      },
+      "tags": [
+        "AI科普",
+        "反诈"
+      ],
+      "notes": ""
+    },
+    {
+      "id": 26,
+      "platform": "公众号",
+      "title": "AI 几分钟画出雪山草地，可它其实从没见过那段历史",
+      "url": "https://mp.weixin.qq.com/s/XzbrSWDqcvDsLCGlfHA67w",
+      "type": "图文",
+      "published_at": "2026-10-15T22:54:16+08:00",
+      "logged_at": "2026-10-15T22:54:16+08:00",
+      "initial_metrics": {
+        "views": null,
+        "likes": null,
+        "comments": null,
+        "shares": null
+      },
+      "skill_source": "calendar-auto",
+      "profile": "",
+      "persona_check": {
+        "score": null,
+        "verdict": ""
+      },
+      "tags": [
+        "AI科普",
+        "AI万里绘征途"
+      ],
+      "notes": ""
+    },
+    {
+      "id": 27,
+      "platform": "小红书",
+      "title": "AI 画的长征，为什么总差一口气",
+      "url": "",
+      "type": "图文",
+      "published_at": "2026-10-15T22:54:16+08:00",
+      "logged_at": "2026-10-15T22:54:16+08:00",
+      "initial_metrics": {
+        "views": null,
+        "likes": null,
+        "comments": null,
+        "shares": null
+      },
+      "skill_source": "calendar-auto",
+      "profile": "",
+      "persona_check": {
+        "score": null,
+        "verdict": ""
+      },
+      "tags": [
+        "AI科普",
+        "AI万里绘征途"
+      ],
+      "notes": ""
+    },
+    {
+      "id": 28,
+      "platform": "抖音",
+      "title": "满屏喊补贴，三句话让 AI 替你算清到手价",
+      "url": "",
+      "type": "视频",
+      "published_at": "2026-10-16T22:42:06+08:00",
+      "logged_at": "2026-10-16T22:42:06+08:00",
+      "initial_metrics": {
+        "views": null,
+        "likes": null,
+        "comments": null,
+        "shares": null
+      },
+      "skill_source": "calendar-auto",
+      "profile": "",
+      "persona_check": {
+        "score": null,
+        "verdict": ""
+      },
+      "tags": [
+        "双11",
+        "AI",
+        "省钱小技巧",
+        "理性消费"
+      ],
+      "notes": ""
+    },
+    {
+      "id": 29,
+      "platform": "快手",
+      "title": "双11 满屏补贴，到手价其实三句话就能算清",
+      "url": "",
+      "type": "视频",
+      "published_at": "2026-10-16T22:44:12+08:00",
+      "logged_at": "2026-10-16T22:44:12+08:00",
+      "initial_metrics": {
+        "views": null,
+        "likes": null,
+        "comments": null,
+        "shares": null
+      },
+      "skill_source": "calendar-auto",
+      "profile": "",
+      "persona_check": {
+        "score": null,
+        "verdict": ""
+      },
+      "tags": [
+        "#双11 #AI #省钱小技巧 #理性消费"
+      ],
+      "notes": ""
+    },
+    {
+      "id": 30,
+      "platform": "微信视频号",
+      "title": "满屏都在喊补贴，可你算清到手价了吗？",
+      "url": "",
+      "type": "视频",
+      "published_at": "2026-10-16T22:45:31+08:00",
+      "logged_at": "2026-10-16T22:45:31+08:00",
+      "initial_metrics": {
+        "views": null,
+        "likes": null,
+        "comments": null,
+        "shares": null
+      },
+      "skill_source": "calendar-auto",
+      "profile": "",
+      "persona_check": {
+        "score": null,
+        "verdict": ""
+      },
+      "tags": [
+        "#双11 #AI #省钱小技巧 #理性消费"
+      ],
+      "notes": ""
+    },
+    {
+      "id": 31,
+      "platform": "B站",
+      "title": "满屏补贴，到手价却算不清｜三句话让 AI 替我算了一遍",
+      "url": "",
+      "type": "视频",
+      "published_at": "2026-10-16T22:45:58+08:00",
+      "logged_at": "2026-10-16T22:45:58+08:00",
+      "initial_metrics": {
+        "views": null,
+        "likes": null,
+        "comments": null,
+        "shares": null
+      },
+      "skill_source": "calendar-auto",
+      "profile": "",
+      "persona_check": {
+        "score": null,
+        "verdict": ""
+      },
+      "tags": [
+        "AI",
+        "科技",
+        "双11",
+        "理性消费",
+        "效率"
+      ],
+      "notes": ""
+    },
+    {
+      "id": 32,
+      "platform": "微信公众号",
+      "title": "双11 的\"超级补贴\"到底省了多少？我让 AI 替我算了一遍",
+      "url": "",
+      "type": "article",
+      "published_at": "2026-10-16T23:05:00+08:00",
+      "logged_at": "2026-10-16T22:55:54+08:00",
+      "initial_metrics": {
+        "views": null,
+        "likes": null,
+        "comments": null,
+        "shares": null
+      },
+      "skill_source": "skill-wechat-publisher",
+      "profile": "AI科普",
+      "persona_check": {
+        "score": 88,
+        "verdict": "pass"
+      },
+      "tags": [
+        "双11",
+        "AI",
+        "省钱小技巧",
+        "理性消费"
+      ],
+      "notes": "2026-10-16 23:42 按 16px 重建草稿 100003379（已核对正文 16px）；旧草稿 100003371 同日删除",
+      "draft_media_id": "100003379"
+    },
+    {
+      "id": 33,
+      "platform": "知乎",
+      "title": "双11 的\"补贴\"到底省了多少？其实到手价三句话就能算清",
+      "url": "https://zhuanlan.zhihu.com/p/2094568355307042086",
+      "type": "文章",
+      "published_at": "2026-10-16T23:20:15+08:00",
+      "logged_at": "2026-10-16T23:20:15+08:00",
+      "initial_metrics": {
+        "views": null,
+        "likes": null,
+        "comments": null,
+        "shares": null
+      },
+      "skill_source": "calendar-auto",
+      "profile": "",
+      "persona_check": {
+        "score": 88,
+        "verdict": "pass",
+        "profile": "AI科普"
+      },
+      "tags": [],
+      "notes": "知乎专栏；正文走 paste_md 富文本（无 Markdown 残留）；5 处小标题加粗"
+    },
+    {
+      "id": 34,
+      "platform": "微信视频号",
+      "title": "禁止教师用AI备课？假的！",
+      "url": "",
+      "type": "视频",
+      "published_at": "2026-10-17T17:18:03+08:00",
+      "logged_at": "2026-10-17T17:18:03+08:00",
+      "initial_metrics": {
+        "views": null,
+        "likes": null,
+        "comments": null,
+        "shares": null
+      },
+      "skill_source": "skill-cross-platform-publish",
+      "profile": "AI科普",
+      "persona_check": {
+        "score": 92.0,
+        "verdict": "pass"
+      },
+      "tags": [
+        "#AI科普 #教师 #辟谣"
+      ],
+      "notes": "课堂动画版成片；竖版 9:16，B站为 16:9 横版"
+    },
+    {
+      "id": 35,
+      "platform": "抖音",
+      "title": "禁止教师用AI备课？假的！",
+      "url": "https://www.douyin.com/video/7697564295760039204",
+      "type": "视频",
+      "published_at": "2026-10-17T17:21:08+08:00",
+      "logged_at": "2026-10-17T17:21:08+08:00",
+      "initial_metrics": {
+        "views": null,
+        "likes": null,
+        "comments": null,
+        "shares": null
+      },
+      "skill_source": "skill-cross-platform-publish",
+      "profile": "AI科普",
+      "persona_check": {
+        "score": 92.0,
+        "verdict": "pass"
+      },
+      "tags": [
+        "AI科普",
+        "教师",
+        "辟谣",
+        "AI备课"
+      ],
+      "notes": "课堂动画版成片；竖版 9:16，B站为 16:9 横版"
+    },
+    {
+      "id": 36,
+      "platform": "快手",
+      "title": "禁止教师用AI备课？假的！",
+      "url": "https://www.kuaishou.com/short-video/3xwxncjeafdj3hk",
+      "type": "视频",
+      "published_at": "2026-10-17T17:23:17+08:00",
+      "logged_at": "2026-10-17T17:23:17+08:00",
+      "initial_metrics": {
+        "views": null,
+        "likes": null,
+        "comments": null,
+        "shares": null
+      },
+      "skill_source": "skill-cross-platform-publish",
+      "profile": "AI科普",
+      "persona_check": {
+        "score": 92.0,
+        "verdict": "pass"
+      },
+      "tags": [
+        "#AI科普 #教师 #辟谣 #AI备课"
+      ],
+      "notes": "课堂动画版成片；竖版 9:16，B站为 16:9 横版"
+    },
+    {
+      "id": 37,
+      "platform": "B站",
+      "title": "「禁止教师用AI备课」？假的！我查了正规说法",
+      "url": "https://www.bilibili.com/video/BV1TEJe6oExm",
+      "type": "视频",
+      "published_at": "2026-10-17T17:24:20+08:00",
+      "logged_at": "2026-10-17T17:24:20+08:00",
+      "initial_metrics": {
+        "views": null,
+        "likes": null,
+        "comments": null,
+        "shares": null
+      },
+      "skill_source": "skill-cross-platform-publish",
+      "profile": "AI科普",
+      "persona_check": {
+        "score": 92.0,
+        "verdict": "pass"
+      },
+      "tags": [
+        "AI科普",
+        "教师",
+        "辟谣",
+        "AI备课"
+      ],
+      "notes": "课堂动画版成片；竖版 9:16，B站为 16:9 横版"
+    },
+    {
+      "id": 38,
+      "platform": "知乎",
+      "title": "「禁止教师用AI备课」系误读：关键是分清「替代」与「使用」",
+      "url": "https://zhuanlan.zhihu.com/p/2094845069782167788",
+      "type": "文章",
+      "published_at": "2026-10-17T17:39:50+08:00",
+      "logged_at": "2026-10-17T17:39:50+08:00",
+      "initial_metrics": {
+        "views": null,
+        "likes": null,
+        "comments": null,
+        "shares": null
+      },
+      "skill_source": "skill-zhihu-publisher",
+      "profile": "AI科普",
+      "persona_check": {
+        "score": 92.0,
+        "verdict": "pass"
+      },
+      "tags": [
+        "AI科普",
+        "教师",
+        "辟谣",
+        "教育"
+      ],
+      "notes": "专栏文章；Markdown 富文本粘贴，含小标题/加粗/列表/分割线"
+    },
+    {
+      "id": 39,
+      "platform": "公众号",
+      "title": "机器人「上班」了？先别慌，它们还没过这三关",
+      "url": "",
+      "type": "draft",
+      "published_at": "2026-10-18T18:38:20+08:00",
+      "logged_at": "2026-10-18T18:38:20+08:00",
+      "initial_metrics": {
+        "views": null,
+        "likes": null,
+        "comments": null,
+        "shares": null
+      },
+      "skill_source": "skill-wechat-publisher",
+      "profile": "AI科普",
+      "persona_check": {
+        "score": 92,
+        "verdict": "pass"
+      },
+      "tags": [],
+      "notes": "media_id 100003394；草稿箱，待勾原创声明与AI生成声明后群发"
+    },
+    {
+      "id": 44,
+      "platform": "视频号",
+      "title": "机器人上岗前，先过这三关",
+      "url": "",
+      "type": "video",
+      "published_at": "2026-10-18T18:55:27+08:00",
+      "logged_at": "2026-10-18T18:55:27+08:00",
+      "initial_metrics": {
+        "views": null,
+        "likes": null,
+        "comments": null,
+        "shares": null
+      },
+      "skill_source": "skill-channels-upload",
+      "profile": "AI科普",
+      "persona_check": {
+        "score": 92,
+        "verdict": "pass"
+      },
+      "tags": [],
+      "notes": "52.8s竖版；Dylan配音；已发表"
+    },
+    {
+      "id": 45,
+      "platform": "抖音",
+      "title": "机器人上岗前，先过这三关",
+      "url": "https://www.douyin.com/video/7697959589630807305",
+      "type": "video",
+      "published_at": "2026-10-18T18:55:27+08:00",
+      "logged_at": "2026-10-18T18:55:27+08:00",
+      "initial_metrics": {
+        "views": null,
+        "likes": null,
+        "comments": null,
+        "shares": null
+      },
+      "skill_source": "skill-douyin-upload",
+      "profile": "AI科普",
+      "persona_check": {
+        "score": 92,
+        "verdict": "pass"
+      },
+      "tags": [],
+      "notes": "作品ID 7697959589630807305"
+    },
+    {
+      "id": 46,
+      "platform": "快手",
+      "title": "机器人上岗前，先过这三关",
+      "url": "",
+      "type": "video",
+      "published_at": "2026-10-18T18:55:27+08:00",
+      "logged_at": "2026-10-18T18:55:27+08:00",
+      "initial_metrics": {
+        "views": null,
+        "likes": null,
+        "comments": null,
+        "shares": null
+      },
+      "skill_source": "skill-kuaishou-upload",
+      "profile": "AI科普",
+      "persona_check": {
+        "score": 92,
+        "verdict": "pass"
+      },
+      "tags": [],
+      "notes": "作品ID 3xxjrik6n7g6yta"
+    },
+    {
+      "id": 47,
+      "platform": "知乎",
+      "title": "机器人开始「上班」了，真正的门槛是什么？",
+      "url": "https://zhuanlan.zhihu.com/p/2095226454883751603",
+      "type": "article",
+      "published_at": "2026-10-18T18:55:27+08:00",
+      "logged_at": "2026-10-18T18:55:27+08:00",
+      "initial_metrics": {
+        "views": null,
+        "likes": null,
+        "comments": null,
+        "shares": null
+      },
+      "skill_source": "skill-zhihu-publisher",
+      "profile": "AI科普",
+      "persona_check": {
+        "score": 92,
+        "verdict": "pass"
+      },
+      "tags": [],
+      "notes": ""
+    },
+    {
+      "id": 49,
+      "platform": "B站",
+      "title": "机器人上岗前，先过这三关｜交易会观察",
+      "url": "https://www.bilibili.com/video/BV1m2n36AEZs",
+      "type": "video",
+      "published_at": "2026-10-18T19:08:20+08:00",
+      "logged_at": "2026-10-18T19:08:20+08:00",
+      "initial_metrics": {
+        "views": null,
+        "likes": null,
+        "comments": null,
+        "shares": null
+      },
+      "skill_source": "skill-bilibili-upload",
+      "profile": "AI科普",
+      "persona_check": {
+        "score": 92,
+        "verdict": "pass"
+      },
+      "tags": [],
+      "notes": "BV1m2n36AEZs，审核中；分区知识(tid 36)，自制"
+    }
+  ]
+}

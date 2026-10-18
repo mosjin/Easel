@@ -2,7 +2,7 @@
   "topic": "交易会机器人变员工-AI科普二创",
   "profile": "AI科普",
   "created": "2026-10-18T17:17:38+08:00",
-  "updated": "2026-10-18T18:38:22+08:00",
+  "updated": "2026-10-18T19:08:40+08:00",
   "steps": [
     {
       "layer": "plan",
@@ -75,13 +75,39 @@
       ],
       "upstream": [],
       "summary": "修正配音源：dashscope qwen3-tts-flash Dylan 重配52.8s；逐句WAV拼接消除mp3填充漂移，字幕轴按真实时长重算；ASS手动换行+深墨字浅色描边"
+    },
+    {
+      "layer": "publish",
+      "skill": "skill-bilibili-upload",
+      "at": "2026-10-18T19:08:23+08:00",
+      "status": "done",
+      "outputs": [
+        "交易会机器人变员工_成品_53s_视频号.mp4",
+        "交易会机器人变员工_封面_16x9_B站.png"
+      ],
+      "upstream": [],
+      "summary": "B站投稿成功 BV1m2n36AEZs（审核中），分区知识，自制"
+    },
+    {
+      "layer": "publish",
+      "skill": "persona-check",
+      "at": "2026-10-18T19:08:26+08:00",
+      "status": "done",
+      "outputs": [],
+      "upstream": [],
+      "summary": "人设一致性 pass（92.0 分）；偏离：无",
+      "persona_check": {
+        "score": 92.0,
+        "verdict": "pass",
+        "deviations": "无"
+      }
     }
   ],
   "title": "交易会机器人变员工：上岗前先过三关",
   "summary": "事实核验+热点适配判断+3个二创角度+公众号/视频号文案初稿",
-  "platform": "公众号,视频号",
+  "platform": "视频号,抖音,快手,知乎,B站,公众号(草稿)",
   "kind": "article",
-  "status": "draft",
+  "status": "published",
   "tags": [
     "交易会",
     "机器人",
@@ -89,8 +115,11 @@
     "AI科普"
   ],
   "deliverables": [
-    "公众号_文案初稿.md",
-    "视频号_口播初稿.md",
-    "事实核验与原文链接.md"
-  ]
+    "交易会机器人变员工_成品_53s_视频号.mp4",
+    "交易会机器人变员工_封面_2.35x1_公众号.png",
+    "交易会机器人变员工_封面_1x1_公众号.png",
+    "交易会机器人变员工_封面_9x16_视频号.png",
+    "交易会机器人变员工_封面_16x9_B站.png"
+  ],
+  "cover": "交易会机器人变员工_封面_2.35x1_公众号.png"
 }
