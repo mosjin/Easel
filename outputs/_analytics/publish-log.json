@@ -1011,9 +1011,9 @@
       "id": 39,
       "platform": "公众号",
       "title": "机器人「上班」了？先别慌，它们还没过这三关",
-      "url": "",
+      "url": "https://mp.weixin.qq.com/s/80kfNJMITa5CHpLU0cDn-A",
       "type": "draft",
-      "published_at": "2026-10-18T18:38:20+08:00",
+      "published_at": "2026-10-18T19:47:00+08:00",
       "logged_at": "2026-10-18T18:38:20+08:00",
       "initial_metrics": {
         "views": null,
@@ -1028,7 +1028,7 @@
         "verdict": "pass"
       },
       "tags": [],
-      "notes": "media_id 100003394；草稿箱，待勾原创声明与AI生成声明后群发"
+      "notes": "已群发；media_id 100003394；原创与AI声明由用户在后台勾选"
     },
     {
       "id": 44,
