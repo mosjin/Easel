@@ -437,6 +437,19 @@ else
             cd "$PROJECT_ROOT"
         fi
     fi
+    if ! command -v node >/dev/null 2>&1; then
+        echo "Node.js 安装流程结束后仍找不到 node 命令，请检查 nvm/npm 前缀是否已加入 PATH。" >&2
+        exit 1
+    fi
+    # 切换后复核版本：nvm use 成功但 PATH 里还有其它 node 目录排在更前面时，node -v
+    # 仍是旧版本，以前会带着错误的 ✓ 继续往下装，到 openclaw 引擎检查才爆。这里直接
+    # 拦住并给出排查方向。
+    if ! node_version_ok "$(node -v | sed 's/v//' | cut -d. -f1)" "$(node -v | sed 's/v//' | cut -d. -f2)"; then
+        echo "安装/切换后 Node 仍为 $(node -v)：$(command -v node)" >&2
+        echo "不满足当前模式要求（OpenClaw 模式需 >=24.16 或 >=26.1）。通常是其它 node 目录（如 ~/.local/node/bin）排在 nvm 之前。" >&2
+        echo "请让 nvm 的 node 优先（nvm alias default <版本>，并确保自定义 PATH 导出写在 nvm 初始化之前），再重跑。" >&2
+        exit 1
+    fi
     ok "Node.js $(node -v)"
 fi
 if command -v python3 >/dev/null 2>&1; then
@@ -452,35 +465,72 @@ else
     echo "未找到 python3；Easel 需要 Python 3.10+。" >&2
     exit 1
 fi
+# ---- 项目虚拟环境健康检查 ----
+# 判定标准：python3 必须解析到 .venv/bin 内，且其 pip 来自本 venv。只看
+# `python3 -m pip --version` 会漏掉一种场景：activate 把不存在的目录顶到 PATH
+# 最前面，python3 落到 venv 之外的解释器（pip 说不定还装得好好的，报错极具误导性）。
+venv_usable() {
+    case "$(command -v python3 2>/dev/null)" in
+        "$PROJECT_ROOT"/.venv/bin/*) ;;
+        *) return 1 ;;
+    esac
+    python3 -m pip --version 2>/dev/null | grep -qF "$PROJECT_ROOT/.venv"
+}
+
+# virtualenv 会把创建时的绝对路径写死进 bin/activate*。项目目录改名/移动后 source
+# activate 会把旧路径（已不存在）塞到 PATH 最前面，venv 里的 python/pip 被整体跳过。
+# 检测到 activate 指向的目录不存在且不是当前项目时原位批量修正（entry point 的
+# shebang 按当前路径生成，不受影响）。
+heal_stale_venv() {
+    local old
+    old="$(sed -n "s/^VIRTUAL_ENV='\([^']*\)'.*/\1/p" "$PROJECT_ROOT/.venv/bin/activate" | head -n1)"
+    [ -n "$old" ] && [ "$old" != "$PROJECT_ROOT/.venv" ] && [ ! -d "$old" ] || return 1
+    info "检测到 .venv 从旧路径移动而来（activate 指向已不存在的 $old），自动修正..."
+    local f
+    for f in "$PROJECT_ROOT"/.venv/bin/activate*; do
+        [ -f "$f" ] && sed -i "s|${old}|$PROJECT_ROOT/.venv|g" "$f"
+    done
+    return 0
+}
+
+# 建 venv（若缺）→ 激活 → 健康检查，发现旧路径则修复后重新激活，仍不可用才报错。
+setup_project_venv() {
+    if [ ! -x "$PROJECT_ROOT/.venv/bin/python" ]; then
+        if ! python3 -c 'import venv' >/dev/null 2>&1; then
+            echo "当前 Python 缺少 venv 模块，无法创建虚拟环境。" >&2
+            echo "Debian/Ubuntu 请运行：sudo apt install python3-venv" >&2
+            echo "RHEL/CentOS 请安装对应的 python3 virtualenv/venv 包后重试。" >&2
+            exit 1
+        fi
+        info "创建虚拟环境 .venv..."
+        python3 -m venv "$PROJECT_ROOT/.venv"
+    fi
+    # shellcheck disable=SC1091
+    source "$PROJECT_ROOT/.venv/bin/activate"
+    if ! venv_usable && heal_stale_venv; then
+        # shellcheck disable=SC1091
+        source "$PROJECT_ROOT/.venv/bin/activate"
+    fi
+    if ! venv_usable; then
+        echo "虚拟环境不可用：python3 实际解析到 $(command -v python3 2>/dev/null || echo '（未找到）')，并非 $PROJECT_ROOT/.venv。" >&2
+        echo "常见原因：项目目录被改名/移动过，.venv 内写死了旧路径（setup 已尝试自动修正但仍未恢复）；" >&2
+        echo "或系统 Python 缺少 ensurepip/venv（Debian/Ubuntu: sudo apt install python3-venv）。" >&2
+        echo "兜底：rm -rf .venv && uv venv .venv --seed，然后重跑 bash setup.sh。" >&2
+        exit 1
+    fi
+    ok "已使用虚拟环境：$PROJECT_ROOT/.venv"
+}
+
 if [ -t 0 ]; then
     USE_VENV="$(ask '使用项目虚拟环境 .venv 安装 Python 依赖？[Y/n]')"
     case "${USE_VENV:-Y}" in
         n|N) warn "将使用当前 Python 环境" ;;
-        *)
-            if [ ! -x "$PROJECT_ROOT/.venv/bin/python" ]; then
-                if ! python3 -c 'import venv' >/dev/null 2>&1; then
-                    echo "当前 Python 缺少 venv 模块，无法创建虚拟环境。" >&2
-                    echo "Debian/Ubuntu 请运行：sudo apt install python3-venv" >&2
-                    echo "RHEL/CentOS 请安装对应的 python3 virtualenv/venv 包后重试。" >&2
-                    exit 1
-                fi
-                info "创建虚拟环境 .venv..."
-                python3 -m venv "$PROJECT_ROOT/.venv"
-            fi
-            # shellcheck disable=SC1091
-            source "$PROJECT_ROOT/.venv/bin/activate"
-            if ! python3 -m pip --version >/dev/null 2>&1; then
-                echo "虚拟环境已创建但缺少 pip，请检查系统 Python 的 ensurepip/venv 包后重试。" >&2
-                exit 1
-            fi
-            ok "已使用虚拟环境：$PROJECT_ROOT/.venv"
-            ;;
+        *) setup_project_venv ;;
     esac
 elif [ -x "$PROJECT_ROOT/.venv/bin/python" ]; then
     # Non-interactive runs reuse an existing project environment when available.
-    # shellcheck disable=SC1091
-    source "$PROJECT_ROOT/.venv/bin/activate"
     info "检测到 .venv，非交互模式自动使用项目虚拟环境"
+    setup_project_venv
 else
     warn "当前为非交互模式且未找到 .venv，将使用系统 Python；建议先创建 Python 3.10+ 虚拟环境"
 fi

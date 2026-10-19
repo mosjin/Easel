@@ -4,6 +4,19 @@
 
 ---
 
+## 安装时报「虚拟环境已创建但缺少 pip」
+
+- **典型场景**：项目目录被改名或移动过（如 `Easel` → `easel_me`），而 `.venv` 是在旧路径下创建的。
+- **根因**：virtualenv 创建时把当时的绝对路径写死进 `.venv/bin/activate*`。`source .venv/bin/activate` 会把不存在的旧目录顶到 PATH 最前面，venv 自己的 python/pip 被整体跳过，`python3` 落到系统里其它解释器（例如 `~/.local/bin/python3` 包装脚本指向的 uv user-env，恰好没装 pip），于是报「缺少 pip」——其实 venv 里的 pip 完好无损。
+- **处理**：新版 setup.sh 会自动检测 activate 里的旧路径并原位修正；手动修复：
+  ```bash
+  sed -i 's|/旧路径/.venv|/当前路径/.venv|g' .venv/bin/activate*
+  ```
+  仍不行就重建：`rm -rf .venv && uv venv .venv --seed`，然后重跑 `bash setup.sh`。
+- **同类坑（Node）**：PATH 里其它 node 目录（如 `~/.local/node/bin`）排在 nvm 之前时，setup 装好 Node 24 后 `node -v` 仍是旧版本，以前会带着错误的 ✓ 继续装、到 openclaw 引擎检查才爆。新版 setup.sh 会在切换后复核版本并明确报错。日常建议 `nvm alias default <版本>`，并把自定义 PATH 导出写在 nvm 初始化之前。
+
+---
+
 ## 扫码确认与当前账号身份校验
 
 - **微信视频号扫码后一直等待**：检测微信扫码组件的确认状态，检查同一浏览器中的跳转页面，并复用辅助页进行低频认证检查，不再频繁创建发布页。手机扫码不等于登录完成；只有已认证的当前视频号接口或可见的登录后界面才判定成功。微信二维码过期时明确提示重新登录。

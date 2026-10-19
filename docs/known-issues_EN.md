@@ -4,6 +4,19 @@ This page tracks known issues relevant to using Easel, along with recommended wo
 
 ---
 
+## Setup fails with "venv created but missing pip"
+
+- **Typical scenario**: the project directory was renamed or moved (e.g. `Easel` → `easel_me`) after `.venv` was created at the old path.
+- **Root cause**: virtualenv bakes its absolute path into `.venv/bin/activate*`. Sourcing `activate` then prepends a non-existent directory to PATH, so the venv's own python/pip are skipped and `python3` resolves to some other interpreter on PATH (for example a `~/.local/bin/python3` wrapper pointing at a uv user-env that has no pip). The "missing pip" message is misleading — the venv's pip is perfectly fine.
+- **Fix**: current setup.sh detects the stale path in `activate` and repairs it in place automatically. Manual repair:
+  ```bash
+  sed -i 's|/old/path/.venv|/current/path/.venv|g' .venv/bin/activate*
+  ```
+  If that doesn't help, recreate the environment: `rm -rf .venv && uv venv .venv --seed`, then re-run `bash setup.sh`.
+- **Related pitfall (Node)**: when another node directory (e.g. `~/.local/node/bin`) precedes nvm on PATH, `node -v` still shows the old version even after setup installs Node 24 — previously the script printed a green checkmark and only failed later at the openclaw engine check. Current setup.sh re-verifies the Node version after switching and fails with an explicit message. Day to day, prefer `nvm alias default <version>` and make sure custom PATH exports come before nvm's initialization in your shell rc.
+
+---
+
 ## Duplicate reply after an "ask_user" prompt in the CLI chat
 
 - **Scope**: `easel chat` (terminal chat) only. **The Web workspace is unaffected.**
