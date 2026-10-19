@@ -6,11 +6,13 @@ All notable changes to Easel are documented in this file.
 
 ### Added
 
+- Added `skills/shared/scripts/subtitle_sync.py`, a deterministic checker for "does the burned subtitle timeline actually match the voice?". It measures the real speech onset near every cue start, reports per-cue offset and first-to-last drift, and fails when a single cue is off by more than 0.15s or the timeline drifts by more than 0.20s. `auto-short-video` now requires this check whenever the video length changes.
 - Added `skills/shared/scripts/cover_head.py`, which overlays the cover art on the first ~0.1s of a finished video so platforms that grab the first frame show the cover. It keeps duration, audio and the subtitle timeline untouched (`add` / `check` / `off` / `selftest`).
 - Added `skills/shared/scripts/img_no_watermark.py`, a deterministic AI-image watermark remover (detect / cover / process / gen) that keeps the original file intact and restores the target aspect ratio.
 
 ### Fixed
 
+- Fixed subtitle/voice desync after re-cutting a voiceover: sentence timings were accumulated from per-part MP3 durations, and each part carries encoder padding (~50–60ms), so 18 sentences drifted nearly one second by the end while the total length still looked right. Parts are now concatenated as PCM and every sentence boundary is recomputed from the joined audio, with an assertion that the timeline sum matches the real duration before anything is rendered.
 - Fixed Kuaishou video publishing being blocked by the react-joyride onboarding overlay: the overlay is cleared before filling the description and again before submitting, and a persistent CSS kill-switch suppresses re-renders that reintroduce it.
 - Fixed form filling on both contenteditable and input targets when a page overlay intercepts pointer events: clicks now fall back to JS focus/dispatch or forced clicks instead of timing out.
 - Fixed Zhihu publishing being reported as "not logged in" because the write page does not render the site-header profile selectors; login detection now also accepts the write-page title/editor selectors, and the logged-out selector was tightened to real sign-in containers.
