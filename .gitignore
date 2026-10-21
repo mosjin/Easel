@@ -34,6 +34,9 @@ Thumbs.db
 # Outputs (keep directory structure via .gitkeep, ignore actual content)
 outputs/**/*
 !outputs/**/.gitkeep
+!outputs/NBA-AI裁判/
+!outputs/NBA-AI裁判/platforms/
+!outputs/NBA-AI裁判/platforms/xiaohongshu.md
 
 # Assets (user materials are not tracked; curated brand/README media is)
 assets/**/*
