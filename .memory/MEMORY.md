@@ -5,3 +5,4 @@
 - [公众号往期推荐](feedback_wechat_mp_past_articles.md) — 必须填真实文章链接，发布前扫占位符
 - [快手标签上限4个](feedback_kuaishou_max_4_tags.md) — 超过4个导致发布静默失败，读回未核实
 - [TTS发音规则](feedback_tts_pronunciation.md) — 年份数字用中文读法，Hawk-Eye读作Hawk Eye，全局适用
+- [双仓记忆同步](feedback_memory_dual_repo_sync.md) — 新经验同时写入当前repo和opc_multi_platform .memory，push to main
