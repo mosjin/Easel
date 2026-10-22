@@ -1144,6 +1144,1190 @@
       },
       "tags": [],
       "notes": "BV1m2n36AEZs，已公开；分区知识(tid 36)，自制"
+    },
+    {
+      "id": 50,
+      "platform": "微信视频号",
+      "title": "AI让古人开口了，为什么我先想到诈骗？",
+      "url": "",
+      "type": "视频",
+      "published_at": "2026-10-19T22:56:07+08:00",
+      "logged_at": "2026-10-19T22:56:07+08:00",
+      "initial_metrics": {
+        "views": null,
+        "likes": null,
+        "comments": null,
+        "shares": null
+      },
+      "skill_source": "calendar-auto",
+      "profile": "",
+      "persona_check": {
+        "score": null,
+        "verdict": ""
+      },
+      "tags": [
+        "#AI科普 #AI数字人 #反诈 #三峡"
+      ],
+      "notes": ""
+    },
+    {
+      "id": 51,
+      "platform": "抖音",
+      "title": "AI让古人开口了，为什么我先想到诈骗？",
+      "url": "https://www.douyin.com/video/7698393214696344851",
+      "type": "视频",
+      "published_at": "2026-10-19T22:57:55+08:00",
+      "logged_at": "2026-10-19T22:57:55+08:00",
+      "initial_metrics": {
+        "views": null,
+        "likes": null,
+        "comments": null,
+        "shares": null
+      },
+      "skill_source": "calendar-auto",
+      "profile": "",
+      "persona_check": {
+        "score": null,
+        "verdict": ""
+      },
+      "tags": [
+        "AI科普",
+        "AI数字人",
+        "反诈",
+        "三峡"
+      ],
+      "notes": ""
+    },
+    {
+      "id": 52,
+      "platform": "快手",
+      "title": "AI让古人开口了，为什么我先想到诈骗？",
+      "url": "https://www.kuaishou.com/short-video/3xp6zanhcxubqyq",
+      "type": "视频",
+      "published_at": "2026-10-19T23:00:05+08:00",
+      "logged_at": "2026-10-19T23:00:05+08:00",
+      "initial_metrics": {
+        "views": null,
+        "likes": null,
+        "comments": null,
+        "shares": null
+      },
+      "skill_source": "calendar-auto",
+      "profile": "",
+      "persona_check": {
+        "score": null,
+        "verdict": ""
+      },
+      "tags": [
+        "#AI科普 #AI数字人 #反诈 #三峡"
+      ],
+      "notes": ""
+    },
+    {
+      "id": 53,
+      "platform": "B站",
+      "title": "AI让古人开口了，为什么我先想到诈骗？｜数字人是怎么拼出来的",
+      "url": "https://www.bilibili.com/video/BV1rmJ96BEYW",
+      "type": "视频",
+      "published_at": "2026-10-19T23:00:32+08:00",
+      "logged_at": "2026-10-19T23:00:32+08:00",
+      "initial_metrics": {
+        "views": null,
+        "likes": null,
+        "comments": null,
+        "shares": null
+      },
+      "skill_source": "calendar-auto",
+      "profile": "",
+      "persona_check": {
+        "score": null,
+        "verdict": ""
+      },
+      "tags": [
+        "AI",
+        "数字人",
+        "反诈",
+        "人工智能",
+        "科普"
+      ],
+      "notes": ""
+    },
+    {
+      "id": 54,
+      "platform": "知乎",
+      "title": "AI 数字人是怎么「拼」出来的？从三峡景区的古人开口说起",
+      "url": "https://zhuanlan.zhihu.com/p/2095650626348832393",
+      "type": "文章",
+      "published_at": "2026-10-19T23:00:49+08:00",
+      "logged_at": "2026-10-19T23:00:49+08:00",
+      "initial_metrics": {
+        "views": null,
+        "likes": null,
+        "comments": null,
+        "shares": null
+      },
+      "skill_source": "calendar-auto",
+      "profile": "",
+      "persona_check": {
+        "score": null,
+        "verdict": ""
+      },
+      "tags": [],
+      "notes": ""
+    },
+    {
+      "id": 55,
+      "platform": "公众号",
+      "title": "AI让古人开口了，为什么我先想到诈骗？",
+      "url": "",
+      "type": "草稿",
+      "published_at": "2026-10-19T23:01:00+08:00",
+      "logged_at": "2026-10-19T23:01:00+08:00",
+      "initial_metrics": {
+        "views": null,
+        "likes": null,
+        "comments": null,
+        "shares": null
+      },
+      "skill_source": "wechat-draft",
+      "profile": "AI科普",
+      "persona_check": {
+        "score": 88,
+        "verdict": "pass"
+      },
+      "tags": [],
+      "notes": "公众号草稿 media_id 100003403；群发前人工点原创声明"
+    },
+    {
+      "id": 56,
+      "platform": "微信视频号",
+      "title": "看不懂经济报告？用AI问一句就够了",
+      "url": "",
+      "type": "视频",
+      "published_at": "2026-10-20T14:42:06+08:00",
+      "logged_at": "2026-10-20T14:42:06+08:00",
+      "initial_metrics": {
+        "views": null,
+        "likes": null,
+        "comments": null,
+        "shares": null
+      },
+      "skill_source": "calendar-auto",
+      "profile": "",
+      "persona_check": {
+        "score": null,
+        "verdict": ""
+      },
+      "tags": [
+        "#AI工具 #AI科普 #经济趋势 #职场技能 #AI时代"
+      ],
+      "notes": ""
+    },
+    {
+      "id": 57,
+      "platform": "抖音",
+      "title": "看不懂经济报告？用AI问一句就够了",
+      "url": "",
+      "type": "视频",
+      "published_at": "2026-10-20T14:43:46+08:00",
+      "logged_at": "2026-10-20T14:43:46+08:00",
+      "initial_metrics": {
+        "views": null,
+        "likes": null,
+        "comments": null,
+        "shares": null
+      },
+      "skill_source": "calendar-auto",
+      "profile": "",
+      "persona_check": {
+        "score": null,
+        "verdict": ""
+      },
+      "tags": [
+        "AI工具",
+        "AI科普",
+        "经济趋势",
+        "职场技能",
+        "AI时代"
+      ],
+      "notes": ""
+    },
+    {
+      "id": 58,
+      "platform": "channels",
+      "title": "看不懂经济报告？用AI问一句就够了",
+      "url": "",
+      "type": "",
+      "published_at": "2026-10-20T14:45:35+08:00",
+      "logged_at": "2026-10-20T14:45:35+08:00",
+      "initial_metrics": {
+        "views": null,
+        "likes": null,
+        "comments": null,
+        "shares": null
+      },
+      "skill_source": "",
+      "profile": "AI科普",
+      "persona_check": {
+        "score": 85,
+        "verdict": "pass"
+      },
+      "tags": [],
+      "notes": ""
+    },
+    {
+      "id": 59,
+      "platform": "wechat-mp",
+      "title": "看不懂经济报告？用AI问一句就够了",
+      "url": "",
+      "type": "",
+      "published_at": "2026-10-20T14:45:35+08:00",
+      "logged_at": "2026-10-20T14:45:35+08:00",
+      "initial_metrics": {
+        "views": null,
+        "likes": null,
+        "comments": null,
+        "shares": null
+      },
+      "skill_source": "",
+      "profile": "AI科普",
+      "persona_check": {
+        "score": 85,
+        "verdict": "pass"
+      },
+      "tags": [],
+      "notes": ""
+    },
+    {
+      "id": 60,
+      "platform": "douyin",
+      "title": "看不懂经济报告？用AI问一句就够了",
+      "url": "",
+      "type": "",
+      "published_at": "2026-10-20T14:45:35+08:00",
+      "logged_at": "2026-10-20T14:45:35+08:00",
+      "initial_metrics": {
+        "views": null,
+        "likes": null,
+        "comments": null,
+        "shares": null
+      },
+      "skill_source": "",
+      "profile": "AI科普",
+      "persona_check": {
+        "score": 85,
+        "verdict": "pass"
+      },
+      "tags": [],
+      "notes": ""
+    },
+    {
+      "id": 61,
+      "platform": "知乎",
+      "title": "经济报告看不懂，我现在直接问 AI（会有意外收获）",
+      "url": "",
+      "type": "文章",
+      "published_at": "2026-10-20T14:47:18+08:00",
+      "logged_at": "2026-10-20T14:47:18+08:00",
+      "initial_metrics": {
+        "views": null,
+        "likes": null,
+        "comments": null,
+        "shares": null
+      },
+      "skill_source": "calendar-auto",
+      "profile": "",
+      "persona_check": {
+        "score": null,
+        "verdict": ""
+      },
+      "tags": [],
+      "notes": ""
+    },
+    {
+      "id": 62,
+      "platform": "zhihu",
+      "title": "经济报告看不懂，我现在直接问 AI（会有意外收获）",
+      "url": "https://zhuanlan.zhihu.com/p/2095888822357833279",
+      "type": "",
+      "published_at": "2026-10-20T14:47:24+08:00",
+      "logged_at": "2026-10-20T14:47:24+08:00",
+      "initial_metrics": {
+        "views": null,
+        "likes": null,
+        "comments": null,
+        "shares": null
+      },
+      "skill_source": "",
+      "profile": "AI科普",
+      "persona_check": {
+        "score": 85,
+        "verdict": "pass"
+      },
+      "tags": [],
+      "notes": ""
+    },
+    {
+      "id": 63,
+      "platform": "快手",
+      "title": "看不懂经济报告？用AI问一句就够了",
+      "url": "",
+      "type": "视频",
+      "published_at": "2026-10-20T14:52:56+08:00",
+      "logged_at": "2026-10-20T14:52:56+08:00",
+      "initial_metrics": {
+        "views": null,
+        "likes": null,
+        "comments": null,
+        "shares": null
+      },
+      "skill_source": "calendar-auto",
+      "profile": "",
+      "persona_check": {
+        "score": null,
+        "verdict": ""
+      },
+      "tags": [],
+      "notes": ""
+    },
+    {
+      "id": 64,
+      "platform": "kuaishou",
+      "title": "看不懂经济报告？用AI问一句就够了",
+      "url": "",
+      "type": "",
+      "published_at": "2026-10-20T14:53:01+08:00",
+      "logged_at": "2026-10-20T14:53:01+08:00",
+      "initial_metrics": {
+        "views": null,
+        "likes": null,
+        "comments": null,
+        "shares": null
+      },
+      "skill_source": "",
+      "profile": "AI科普",
+      "persona_check": {
+        "score": 85,
+        "verdict": "pass"
+      },
+      "tags": [],
+      "notes": ""
+    },
+    {
+      "id": 65,
+      "platform": "B站",
+      "title": "看不懂经济报告？用AI问一句就够了",
+      "url": "",
+      "type": "视频",
+      "published_at": "2026-10-20T14:56:01+08:00",
+      "logged_at": "2026-10-20T14:56:01+08:00",
+      "initial_metrics": {
+        "views": null,
+        "likes": null,
+        "comments": null,
+        "shares": null
+      },
+      "skill_source": "calendar-auto",
+      "profile": "",
+      "persona_check": {
+        "score": null,
+        "verdict": ""
+      },
+      "tags": [
+        "AI工具",
+        "AI科普",
+        "经济趋势",
+        "职场技能",
+        "效率"
+      ],
+      "notes": ""
+    },
+    {
+      "id": 66,
+      "platform": "bilibili",
+      "title": "看不懂经济报告？用AI问一句就够了",
+      "url": "",
+      "type": "",
+      "published_at": "2026-10-20T14:56:05+08:00",
+      "logged_at": "2026-10-20T14:56:05+08:00",
+      "initial_metrics": {
+        "views": null,
+        "likes": null,
+        "comments": null,
+        "shares": null
+      },
+      "skill_source": "",
+      "profile": "AI科普",
+      "persona_check": {
+        "score": 85,
+        "verdict": "pass"
+      },
+      "tags": [],
+      "notes": ""
+    },
+    {
+      "id": 67,
+      "platform": "weixin",
+      "title": "DeepSeek 取了史上最烂的名字，但它在做一件重要的事",
+      "url": "",
+      "type": "",
+      "published_at": "2026-10-21T14:57:00+08:00",
+      "logged_at": "2026-10-21T14:57:00+08:00",
+      "initial_metrics": {
+        "views": null,
+        "likes": null,
+        "comments": null,
+        "shares": null
+      },
+      "skill_source": "",
+      "profile": "AI科普",
+      "persona_check": {
+        "score": 91,
+        "verdict": "pass"
+      },
+      "tags": [],
+      "notes": ""
+    },
+    {
+      "id": 68,
+      "platform": "快手",
+      "title": "DeepSeek最差名字·开源第一",
+      "url": "",
+      "type": "视频",
+      "published_at": "2026-10-21T15:01:20+08:00",
+      "logged_at": "2026-10-21T15:01:20+08:00",
+      "initial_metrics": {
+        "views": null,
+        "likes": null,
+        "comments": null,
+        "shares": null
+      },
+      "skill_source": "calendar-auto",
+      "profile": "",
+      "persona_check": {
+        "score": null,
+        "verdict": ""
+      },
+      "tags": [
+        "#AI科普 #DeepSeek #人工智能 #大模型"
+      ],
+      "notes": ""
+    },
+    {
+      "id": 69,
+      "platform": "快手",
+      "title": "DeepSeek最差名字·开源第一",
+      "url": "",
+      "type": "",
+      "published_at": "2026-10-21T15:01:28+08:00",
+      "logged_at": "2026-10-21T15:01:28+08:00",
+      "initial_metrics": {
+        "views": null,
+        "likes": null,
+        "comments": null,
+        "shares": null
+      },
+      "skill_source": "skill-kuaishou-upload",
+      "profile": "AI科普",
+      "persona_check": {
+        "score": 91,
+        "verdict": "pass"
+      },
+      "tags": [],
+      "notes": ""
+    },
+    {
+      "id": 70,
+      "platform": "抖音",
+      "title": "DeepSeek最差名字·开源第一",
+      "url": "",
+      "type": "视频",
+      "published_at": "2026-10-21T15:03:10+08:00",
+      "logged_at": "2026-10-21T15:03:10+08:00",
+      "initial_metrics": {
+        "views": null,
+        "likes": null,
+        "comments": null,
+        "shares": null
+      },
+      "skill_source": "calendar-auto",
+      "profile": "",
+      "persona_check": {
+        "score": null,
+        "verdict": ""
+      },
+      "tags": [
+        "AI科普",
+        "DeepSeek",
+        "人工智能",
+        "大模型"
+      ],
+      "notes": ""
+    },
+    {
+      "id": 71,
+      "platform": "微信视频号",
+      "title": "DeepSeek最差名字·开源第一",
+      "url": "",
+      "type": "视频",
+      "published_at": "2026-10-21T15:03:28+08:00",
+      "logged_at": "2026-10-21T15:03:28+08:00",
+      "initial_metrics": {
+        "views": null,
+        "likes": null,
+        "comments": null,
+        "shares": null
+      },
+      "skill_source": "calendar-auto",
+      "profile": "",
+      "persona_check": {
+        "score": null,
+        "verdict": ""
+      },
+      "tags": [],
+      "notes": ""
+    },
+    {
+      "id": 72,
+      "platform": "视频号",
+      "title": "DeepSeek最差名字·开源第一",
+      "url": "",
+      "type": "",
+      "published_at": "2026-10-21T15:03:35+08:00",
+      "logged_at": "2026-10-21T15:03:35+08:00",
+      "initial_metrics": {
+        "views": null,
+        "likes": null,
+        "comments": null,
+        "shares": null
+      },
+      "skill_source": "skill-channels-upload",
+      "profile": "AI科普",
+      "persona_check": {
+        "score": 91,
+        "verdict": "pass"
+      },
+      "tags": [],
+      "notes": ""
+    },
+    {
+      "id": 73,
+      "platform": "抖音",
+      "title": "DeepSeek最差名字·开源第一",
+      "url": "",
+      "type": "",
+      "published_at": "2026-10-21T15:03:37+08:00",
+      "logged_at": "2026-10-21T15:03:37+08:00",
+      "initial_metrics": {
+        "views": null,
+        "likes": null,
+        "comments": null,
+        "shares": null
+      },
+      "skill_source": "skill-douyin-upload",
+      "profile": "AI科普",
+      "persona_check": {
+        "score": 91,
+        "verdict": "pass"
+      },
+      "tags": [],
+      "notes": ""
+    },
+    {
+      "id": 74,
+      "platform": "知乎",
+      "title": "DeepSeek 取了史上最差的名字，但它已做到开源第一",
+      "url": "",
+      "type": "文章",
+      "published_at": "2026-10-21T15:09:36+08:00",
+      "logged_at": "2026-10-21T15:09:36+08:00",
+      "initial_metrics": {
+        "views": null,
+        "likes": null,
+        "comments": null,
+        "shares": null
+      },
+      "skill_source": "calendar-auto",
+      "profile": "",
+      "persona_check": {
+        "score": null,
+        "verdict": ""
+      },
+      "tags": [],
+      "notes": ""
+    },
+    {
+      "id": 75,
+      "platform": "知乎",
+      "title": "DeepSeek 取了史上最差的名字，但它已做到开源第一",
+      "url": "",
+      "type": "",
+      "published_at": "2026-10-21T15:09:43+08:00",
+      "logged_at": "2026-10-21T15:09:43+08:00",
+      "initial_metrics": {
+        "views": null,
+        "likes": null,
+        "comments": null,
+        "shares": null
+      },
+      "skill_source": "skill-zhihu-publisher",
+      "profile": "AI科普",
+      "persona_check": {
+        "score": 91,
+        "verdict": "pass"
+      },
+      "tags": [],
+      "notes": ""
+    },
+    {
+      "id": 76,
+      "platform": "B站",
+      "title": "DeepSeek 取了史上最差的名字，但它已做到开源第一",
+      "url": "",
+      "type": "视频",
+      "published_at": "2026-10-21T15:11:59+08:00",
+      "logged_at": "2026-10-21T15:11:59+08:00",
+      "initial_metrics": {
+        "views": null,
+        "likes": null,
+        "comments": null,
+        "shares": null
+      },
+      "skill_source": "calendar-auto",
+      "profile": "",
+      "persona_check": {
+        "score": null,
+        "verdict": ""
+      },
+      "tags": [
+        "DeepSeek",
+        "AI工具",
+        "AI科普",
+        "大模型",
+        "人工智能"
+      ],
+      "notes": ""
+    },
+    {
+      "id": 77,
+      "platform": "B站",
+      "title": "DeepSeek 取了史上最差的名字，但它已做到开源第一",
+      "url": "",
+      "type": "",
+      "published_at": "2026-10-21T15:12:05+08:00",
+      "logged_at": "2026-10-21T15:12:05+08:00",
+      "initial_metrics": {
+        "views": null,
+        "likes": null,
+        "comments": null,
+        "shares": null
+      },
+      "skill_source": "skill-bilibili-upload",
+      "profile": "AI科普",
+      "persona_check": {
+        "score": 91,
+        "verdict": "pass"
+      },
+      "tags": [],
+      "notes": ""
+    },
+    {
+      "id": 78,
+      "platform": "B站",
+      "title": "NBA引入AI裁判却把球员定到场外？深度聊聊体育AI的真实边界",
+      "url": "",
+      "type": "视频",
+      "published_at": "2026-10-22T00:10:20+08:00",
+      "logged_at": "2026-10-22T00:10:20+08:00",
+      "initial_metrics": {
+        "views": null,
+        "likes": null,
+        "comments": null,
+        "shares": null
+      },
+      "skill_source": "calendar-auto",
+      "profile": "",
+      "persona_check": {
+        "score": null,
+        "verdict": ""
+      },
+      "tags": [
+        "NBA",
+        "AI",
+        "人工智能",
+        "体育科技",
+        "鹰眼技术",
+        "裁判",
+        "科技冷知识",
+        "机器学习",
+        "计算机视觉",
+        "算法"
+      ],
+      "notes": ""
+    },
+    {
+      "id": 79,
+      "platform": "知乎",
+      "title": "NBA已经把AI用到追踪球员29个关键点了，但AI还把人定到了场外",
+      "url": "",
+      "type": "文章",
+      "published_at": "2026-10-22T00:11:28+08:00",
+      "logged_at": "2026-10-22T00:11:28+08:00",
+      "initial_metrics": {
+        "views": null,
+        "likes": null,
+        "comments": null,
+        "shares": null
+      },
+      "skill_source": "calendar-auto",
+      "profile": "",
+      "persona_check": {
+        "score": null,
+        "verdict": ""
+      },
+      "tags": [
+        "#AI #NBA #体育科技 #人工智能 #机器学习"
+      ],
+      "notes": ""
+    },
+    {
+      "id": 80,
+      "platform": "微信视频号",
+      "title": "AI裁判把球员定到场外了",
+      "url": "",
+      "type": "视频",
+      "published_at": "2026-10-22T00:19:24+08:00",
+      "logged_at": "2026-10-22T00:19:24+08:00",
+      "initial_metrics": {
+        "views": null,
+        "likes": null,
+        "comments": null,
+        "shares": null
+      },
+      "skill_source": "calendar-auto",
+      "profile": "",
+      "persona_check": {
+        "score": null,
+        "verdict": ""
+      },
+      "tags": [
+        "#AI科普 #NBA #人工智能 #科技冷知识"
+      ],
+      "notes": ""
+    },
+    {
+      "id": 81,
+      "platform": "抖音",
+      "title": "NBA用AI裁判把球员定到场外了？",
+      "url": "",
+      "type": "视频",
+      "published_at": "2026-10-22T00:22:59+08:00",
+      "logged_at": "2026-10-22T00:22:59+08:00",
+      "initial_metrics": {
+        "views": null,
+        "likes": null,
+        "comments": null,
+        "shares": null
+      },
+      "skill_source": "calendar-auto",
+      "profile": "",
+      "persona_check": {
+        "score": null,
+        "verdict": ""
+      },
+      "tags": [
+        "NBA",
+        "AI科技",
+        "人工智能",
+        "科技冷知识",
+        "涨知识"
+      ],
+      "notes": ""
+    },
+    {
+      "id": 82,
+      "platform": "抖音",
+      "title": "NBA用AI裁判把球员定到场外了？",
+      "url": "",
+      "type": "",
+      "published_at": "2026-10-22T00:23:14+08:00",
+      "logged_at": "2026-10-22T00:23:14+08:00",
+      "initial_metrics": {
+        "views": null,
+        "likes": null,
+        "comments": null,
+        "shares": null
+      },
+      "skill_source": "skill-douyin-upload",
+      "profile": "小宁静致远",
+      "persona_check": {
+        "score": 85,
+        "verdict": "pass"
+      },
+      "tags": [],
+      "notes": ""
+    },
+    {
+      "id": 83,
+      "platform": "快手",
+      "title": "NBA最牛AI裁判系统，把球员定位到场外了😅 12个摄像头+29个关键点，精度这么高还会出错？",
+      "url": "",
+      "type": "视频",
+      "published_at": "2026-10-22T00:38:50+08:00",
+      "logged_at": "2026-10-22T00:38:50+08:00",
+      "initial_metrics": {
+        "views": null,
+        "likes": null,
+        "comments": null,
+        "shares": null
+      },
+      "skill_source": "calendar-auto",
+      "profile": "",
+      "persona_check": {
+        "score": null,
+        "verdict": ""
+      },
+      "tags": [
+        "#NBA #AI科技 #人工智能 #涨知识"
+      ],
+      "notes": ""
+    },
+    {
+      "id": 84,
+      "platform": "抖音",
+      "title": "AI助手大战2026，Claude终于出招了！",
+      "url": "",
+      "type": "视频",
+      "published_at": "2026-10-22T19:54:56+08:00",
+      "logged_at": "2026-10-22T19:54:56+08:00",
+      "initial_metrics": {
+        "views": null,
+        "likes": null,
+        "comments": null,
+        "shares": null
+      },
+      "skill_source": "calendar-auto",
+      "profile": "",
+      "persona_check": {
+        "score": null,
+        "verdict": ""
+      },
+      "tags": [
+        "AI助手",
+        "ClaudeDuet",
+        "人工智能",
+        "科技资讯"
+      ],
+      "notes": ""
+    },
+    {
+      "id": 85,
+      "platform": "B站",
+      "title": "AI助手三国志：Claude Duet vs OpenAI Dots vs Meta AI，谁能赢？",
+      "url": "",
+      "type": "视频",
+      "published_at": "2026-10-22T19:57:51+08:00",
+      "logged_at": "2026-10-22T19:57:51+08:00",
+      "initial_metrics": {
+        "views": null,
+        "likes": null,
+        "comments": null,
+        "shares": null
+      },
+      "skill_source": "calendar-auto",
+      "profile": "",
+      "persona_check": {
+        "score": null,
+        "verdict": ""
+      },
+      "tags": [
+        "AI助手",
+        "ClaudeDuet",
+        "人工智能",
+        "科技",
+        "Anthropic"
+      ],
+      "notes": ""
+    },
+    {
+      "id": 86,
+      "platform": "快手",
+      "title": "AI助手大战2026，Claude终于出招了！",
+      "url": "",
+      "type": "视频",
+      "published_at": "2026-10-22T19:58:00+08:00",
+      "logged_at": "2026-10-22T19:58:00+08:00",
+      "initial_metrics": {
+        "views": null,
+        "likes": null,
+        "comments": null,
+        "shares": null
+      },
+      "skill_source": "calendar-auto",
+      "profile": "",
+      "persona_check": {
+        "score": null,
+        "verdict": ""
+      },
+      "tags": [
+        "#AI助手 #ClaudeDuet #人工智能 #科技资讯"
+      ],
+      "notes": ""
+    },
+    {
+      "id": 87,
+      "platform": "知乎",
+      "title": "Claude Duet vs OpenAI Dots vs Meta AI：三家主动型AI助手的竞争逻辑有何不同？",
+      "url": "",
+      "type": "文章",
+      "published_at": "2026-10-22T19:58:21+08:00",
+      "logged_at": "2026-10-22T19:58:21+08:00",
+      "initial_metrics": {
+        "views": null,
+        "likes": null,
+        "comments": null,
+        "shares": null
+      },
+      "skill_source": "calendar-auto",
+      "profile": "",
+      "persona_check": {
+        "score": null,
+        "verdict": ""
+      },
+      "tags": [],
+      "notes": ""
+    },
+    {
+      "id": 88,
+      "platform": "douyin",
+      "title": "AI助手大战2026，Claude终于出招了！",
+      "url": "",
+      "type": "",
+      "published_at": "2026-10-22T19:58:32+08:00",
+      "logged_at": "2026-10-22T19:58:32+08:00",
+      "initial_metrics": {
+        "views": null,
+        "likes": null,
+        "comments": null,
+        "shares": null
+      },
+      "skill_source": "",
+      "profile": "通用",
+      "persona_check": {
+        "score": 85,
+        "verdict": "pass"
+      },
+      "tags": [],
+      "notes": ""
+    },
+    {
+      "id": 89,
+      "platform": "kuaishou",
+      "title": "AI助手大战2026，Claude终于出招了！",
+      "url": "",
+      "type": "",
+      "published_at": "2026-10-22T19:58:32+08:00",
+      "logged_at": "2026-10-22T19:58:32+08:00",
+      "initial_metrics": {
+        "views": null,
+        "likes": null,
+        "comments": null,
+        "shares": null
+      },
+      "skill_source": "",
+      "profile": "通用",
+      "persona_check": {
+        "score": 85,
+        "verdict": "pass"
+      },
+      "tags": [],
+      "notes": ""
+    },
+    {
+      "id": 90,
+      "platform": "bilibili",
+      "title": "AI助手三国志：Claude Duet vs OpenAI Dots vs Meta AI，谁能赢？",
+      "url": "",
+      "type": "",
+      "published_at": "2026-10-22T19:58:32+08:00",
+      "logged_at": "2026-10-22T19:58:32+08:00",
+      "initial_metrics": {
+        "views": null,
+        "likes": null,
+        "comments": null,
+        "shares": null
+      },
+      "skill_source": "",
+      "profile": "通用",
+      "persona_check": {
+        "score": 85,
+        "verdict": "pass"
+      },
+      "tags": [],
+      "notes": ""
+    },
+    {
+      "id": 91,
+      "platform": "zhihu",
+      "title": "Claude Duet vs OpenAI Dots vs Meta AI：三家主动型AI助手的竞争逻辑有何不同？",
+      "url": "",
+      "type": "",
+      "published_at": "2026-10-22T19:58:32+08:00",
+      "logged_at": "2026-10-22T19:58:32+08:00",
+      "initial_metrics": {
+        "views": null,
+        "likes": null,
+        "comments": null,
+        "shares": null
+      },
+      "skill_source": "",
+      "profile": "通用",
+      "persona_check": {
+        "score": 85,
+        "verdict": "pass"
+      },
+      "tags": [],
+      "notes": ""
+    },
+    {
+      "id": 92,
+      "platform": "微信视频号",
+      "title": "AI助手大战2026，Claude终于出招了！",
+      "url": "",
+      "type": "视频",
+      "published_at": "2026-10-22T20:03:16+08:00",
+      "logged_at": "2026-10-22T20:03:16+08:00",
+      "initial_metrics": {
+        "views": null,
+        "likes": null,
+        "comments": null,
+        "shares": null
+      },
+      "skill_source": "calendar-auto",
+      "profile": "",
+      "persona_check": {
+        "score": null,
+        "verdict": ""
+      },
+      "tags": [
+        "#AI助手 #ClaudeDuet #人工智能 #科技资讯"
+      ],
+      "notes": ""
+    },
+    {
+      "id": 93,
+      "platform": "weixin-channels",
+      "title": "AI助手大战2026，Claude终于出招了！",
+      "url": "",
+      "type": "",
+      "published_at": "2026-10-22T20:03:49+08:00",
+      "logged_at": "2026-10-22T20:03:49+08:00",
+      "initial_metrics": {
+        "views": null,
+        "likes": null,
+        "comments": null,
+        "shares": null
+      },
+      "skill_source": "",
+      "profile": "小宁静致远",
+      "persona_check": {
+        "score": 82,
+        "verdict": "pass"
+      },
+      "tags": [],
+      "notes": ""
+    },
+    {
+      "id": 94,
+      "platform": "wechat",
+      "title": "Claude Duet来了：AI助手的下一个形态",
+      "url": "",
+      "type": "",
+      "published_at": "2026-10-22T20:03:49+08:00",
+      "logged_at": "2026-10-22T20:03:49+08:00",
+      "initial_metrics": {
+        "views": null,
+        "likes": null,
+        "comments": null,
+        "shares": null
+      },
+      "skill_source": "",
+      "profile": "小宁静致远",
+      "persona_check": {
+        "score": 82,
+        "verdict": "pass"
+      },
+      "tags": [],
+      "notes": ""
+    },
+    {
+      "id": 95,
+      "platform": "知乎",
+      "title": "Claude Duet vs OpenAI Dots vs Meta AI：三家「主动型AI助手」的竞争逻辑有何不同？",
+      "url": "",
+      "type": "文章",
+      "published_at": "2026-10-22T20:22:18+08:00",
+      "logged_at": "2026-10-22T20:22:18+08:00",
+      "initial_metrics": {
+        "views": null,
+        "likes": null,
+        "comments": null,
+        "shares": null
+      },
+      "skill_source": "calendar-auto",
+      "profile": "",
+      "persona_check": {
+        "score": null,
+        "verdict": ""
+      },
+      "tags": [],
+      "notes": ""
+    },
+    {
+      "id": 96,
+      "platform": "zhihu",
+      "title": "Claude Duet vs OpenAI Dots vs Meta AI：三家「主动型AI助手」的竞争逻辑有何不同？（修订版）",
+      "url": "",
+      "type": "",
+      "published_at": "2026-10-22T20:22:23+08:00",
+      "logged_at": "2026-10-22T20:22:23+08:00",
+      "initial_metrics": {
+        "views": null,
+        "likes": null,
+        "comments": null,
+        "shares": null
+      },
+      "skill_source": "",
+      "profile": "小宁静致远",
+      "persona_check": {
+        "score": 82,
+        "verdict": "pass"
+      },
+      "tags": [],
+      "notes": ""
+    },
+    {
+      "id": 97,
+      "platform": "weixin-mp",
+      "title": "Claude Duet来了：AI助手的下一个形态",
+      "url": "",
+      "type": "",
+      "published_at": "2026-10-22T20:35:45+08:00",
+      "logged_at": "2026-10-22T20:35:45+08:00",
+      "initial_metrics": {
+        "views": null,
+        "likes": null,
+        "comments": null,
+        "shares": null
+      },
+      "skill_source": "",
+      "profile": "通用",
+      "persona_check": {
+        "score": 80,
+        "verdict": "pass"
+      },
+      "tags": [],
+      "notes": ""
     }
   ]
 }
