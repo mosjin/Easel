@@ -331,6 +331,8 @@ API 直连模式不提供此 OpenClaw 专用开关。
 
 ## 🧩 使用 Easel
 
+发布中心提供“自动发布 / 人工审核发布”两条可选路径，默认保留原有自动发布流程。人工路径采用“AI 排版 → 人工审核 → 复制/导出 → 官方发布页亲自提交”，修改稿件或素材后需重新审核，导出和排期不等于已发布；公众号支持富文本复制和 HTML 预览。页面切换不更改全局发布权限；如需在 Web 后端禁用自动提交，可配置 `EASEL_PUBLISH_MODE=manual`。配置边界、登录状态和导出说明见[人工发布工作流](docs/manual-publishing.md)。
+
 常用入口：
 
 | 命令 | 作用 |
@@ -416,6 +418,7 @@ Easel 的技能体系和工作流受益于许多优秀的开源项目、工具�
     <td align="center" width="84"><a href="https://github.com/qywMichelle"><img src="https://github.com/qywMichelle.png?size=96" width="72" height="72" alt="qywMichelle"><br><strong>qywMichelle</strong></a></td>
     <td align="center" width="84"><a href="https://github.com/wulinjuan"><img src="https://github.com/wulinjuan.png?size=96" width="72" height="72" alt="wulinjuan"><br><strong>wulinjuan</strong></a></td>
     <td align="center" width="84"><a href="https://github.com/arctanxarc"><img src="https://github.com/arctanxarc.png?size=96" width="72" height="72" alt="arctanxarc"><br><strong>arctanxarc</strong></a></td>
+    <td align="center" width="84"><a href="https://github.com/hongxingli319"><img src="https://github.com/hongxingli319.png?size=96" width="72" height="72" alt="hongxingli319"><br><strong>hongxingli319</strong></a></td>
     <td align="center" width="84"><a href="https://github.com/mengyuyuan"><img src="https://github.com/mengyuyuan.png?size=96" width="72" height="72" alt="mengyuyuan"><br><strong>mengyuyuan</strong></a></td>
     <td align="center" width="84"><a href="https://github.com/Dear47"><img src="https://github.com/Dear47.png?size=96" width="72" height="72" alt="Dear47"><br><strong>Dear47</strong></a></td>
   </tr>

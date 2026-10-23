@@ -272,6 +272,8 @@ when invoking the OpenClaw CLI rather than requesting an unsupported `medium` le
 
 Never commit `.env`, cookies, or platform login state. Real publishing can be affected by verification, permissions, platform risk controls, and UI changes; use previews and checks for the first attempt.
 
+The Publishing Center offers **Automatic publishing / Human-reviewed publishing**, retaining the existing automatic workflow by default. The manual path uses AI formatting, human review, copy/export, and personal submission on the official platform page. Editing the copy, tags, or media invalidates the previous review; copying, exporting, and scheduling never mark a post as published. WeChat Official Accounts support rich-text copy and an HTML preview. Switching paths does not change global publishing permissions; set `EASEL_PUBLISH_MODE=manual` to disable automatic Web submissions on the backend. See [the manual publishing guide](docs/manual-publishing.md) for configuration, browser login boundaries, and exports.
+
 ## 🧩 Using Easel
 
 | Command | Purpose |
@@ -352,6 +354,7 @@ Contributions and discussion are welcome. If you have ideas, questions, or impro
     <td align="center" width="84"><a href="https://github.com/qywMichelle"><img src="https://github.com/qywMichelle.png?size=96" width="72" height="72" alt="qywMichelle"><br><strong>qywMichelle</strong></a></td>
     <td align="center" width="84"><a href="https://github.com/wulinjuan"><img src="https://github.com/wulinjuan.png?size=96" width="72" height="72" alt="wulinjuan"><br><strong>wulinjuan</strong></a></td>
     <td align="center" width="84"><a href="https://github.com/arctanxarc"><img src="https://github.com/arctanxarc.png?size=96" width="72" height="72" alt="arctanxarc"><br><strong>arctanxarc</strong></a></td>
+    <td align="center" width="84"><a href="https://github.com/hongxingli319"><img src="https://github.com/hongxingli319.png?size=96" width="72" height="72" alt="hongxingli319"><br><strong>hongxingli319</strong></a></td>
     <td align="center" width="84"><a href="https://github.com/mengyuyuan"><img src="https://github.com/mengyuyuan.png?size=96" width="72" height="72" alt="mengyuyuan"><br><strong>mengyuyuan</strong></a></td>
     <td align="center" width="84"><a href="https://github.com/Dear47"><img src="https://github.com/Dear47.png?size=96" width="72" height="72" alt="Dear47"><br><strong>Dear47</strong></a></td>
   </tr>
