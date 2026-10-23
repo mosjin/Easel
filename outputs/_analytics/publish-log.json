@@ -2328,6 +2328,272 @@
       },
       "tags": [],
       "notes": ""
+    },
+    {
+      "id": 98,
+      "platform": "快手",
+      "title": "小天才不让你和别的手表打电话，这招太绝了",
+      "url": "",
+      "type": "视频",
+      "published_at": "2026-10-23T12:21:43+08:00",
+      "logged_at": "2026-10-23T12:21:43+08:00",
+      "initial_metrics": {
+        "views": null,
+        "likes": null,
+        "comments": null,
+        "shares": null
+      },
+      "skill_source": "calendar-auto",
+      "profile": "",
+      "persona_check": {
+        "score": null,
+        "verdict": ""
+      },
+      "tags": [
+        "#小天才 #育儿 #消费陷阱 #网络效应"
+      ],
+      "notes": ""
+    },
+    {
+      "id": 99,
+      "platform": "知乎",
+      "title": "不是孩子逼你，是\"网络效应\"在逼你——读懂小天才背后的产品设计逻辑",
+      "url": "",
+      "type": "文章",
+      "published_at": "2026-10-23T12:22:55+08:00",
+      "logged_at": "2026-10-23T12:22:55+08:00",
+      "initial_metrics": {
+        "views": null,
+        "likes": null,
+        "comments": null,
+        "shares": null
+      },
+      "skill_source": "calendar-auto",
+      "profile": "",
+      "persona_check": {
+        "score": null,
+        "verdict": ""
+      },
+      "tags": [],
+      "notes": ""
+    },
+    {
+      "id": 100,
+      "platform": "微信视频号",
+      "title": "为什么你家孩子一定要买小天才？背后是套精心设计的产品策略",
+      "url": "",
+      "type": "视频",
+      "published_at": "2026-10-23T12:34:00+08:00",
+      "logged_at": "2026-10-23T12:34:00+08:00",
+      "initial_metrics": {
+        "views": null,
+        "likes": null,
+        "comments": null,
+        "shares": null
+      },
+      "skill_source": "calendar-auto",
+      "profile": "",
+      "persona_check": {
+        "score": null,
+        "verdict": ""
+      },
+      "tags": [],
+      "notes": ""
+    },
+    {
+      "id": 101,
+      "platform": "B站",
+      "title": "小天才卖的不是手表，是「社交准入证」——网络效应锁定是怎么运作的",
+      "url": "",
+      "type": "视频",
+      "published_at": "2026-10-23T12:35:17+08:00",
+      "logged_at": "2026-10-23T12:35:17+08:00",
+      "initial_metrics": {
+        "views": null,
+        "likes": null,
+        "comments": null,
+        "shares": null
+      },
+      "skill_source": "calendar-auto",
+      "profile": "",
+      "persona_check": {
+        "score": null,
+        "verdict": ""
+      },
+      "tags": [
+        "网络效应",
+        "小天才",
+        "产品设计",
+        "消费心理",
+        "商业逻辑"
+      ],
+      "notes": ""
+    },
+    {
+      "id": 102,
+      "platform": "wechat-mp",
+      "title": "不是孩子逼你，是\"网络效应\"在逼你",
+      "url": "",
+      "type": "",
+      "published_at": "2026-10-23T12:35:32+08:00",
+      "logged_at": "2026-10-23T12:35:32+08:00",
+      "initial_metrics": {
+        "views": null,
+        "likes": null,
+        "comments": null,
+        "shares": null
+      },
+      "skill_source": "",
+      "profile": "jinlab",
+      "persona_check": {
+        "score": 80,
+        "verdict": "pass"
+      },
+      "tags": [],
+      "notes": ""
+    },
+    {
+      "id": 103,
+      "platform": "weixin-channels",
+      "title": "为什么你家孩子一定要买小天才？背后是套精心设计的产品策略",
+      "url": "",
+      "type": "",
+      "published_at": "2026-10-23T12:35:32+08:00",
+      "logged_at": "2026-10-23T12:35:32+08:00",
+      "initial_metrics": {
+        "views": null,
+        "likes": null,
+        "comments": null,
+        "shares": null
+      },
+      "skill_source": "",
+      "profile": "jinlab",
+      "persona_check": {
+        "score": 80,
+        "verdict": "pass"
+      },
+      "tags": [],
+      "notes": ""
+    },
+    {
+      "id": 104,
+      "platform": "bilibili",
+      "title": "小天才卖的不是手表，是「社交准入证」——网络效应锁定是怎么运作的",
+      "url": "",
+      "type": "",
+      "published_at": "2026-10-23T12:35:32+08:00",
+      "logged_at": "2026-10-23T12:35:32+08:00",
+      "initial_metrics": {
+        "views": null,
+        "likes": null,
+        "comments": null,
+        "shares": null
+      },
+      "skill_source": "",
+      "profile": "jinlab",
+      "persona_check": {
+        "score": 80,
+        "verdict": "pass"
+      },
+      "tags": [],
+      "notes": ""
+    },
+    {
+      "id": 105,
+      "platform": "kuaishou",
+      "title": "为什么你家孩子一定要买小天才？背后是套精心设计的产品策略",
+      "url": "",
+      "type": "",
+      "published_at": "2026-10-23T12:35:32+08:00",
+      "logged_at": "2026-10-23T12:35:32+08:00",
+      "initial_metrics": {
+        "views": null,
+        "likes": null,
+        "comments": null,
+        "shares": null
+      },
+      "skill_source": "",
+      "profile": "jinlab",
+      "persona_check": {
+        "score": 80,
+        "verdict": "pass"
+      },
+      "tags": [],
+      "notes": ""
+    },
+    {
+      "id": 106,
+      "platform": "zhihu",
+      "title": "为什么小天才要让小学生互加好友？一文读懂网络效应锁定策略",
+      "url": "",
+      "type": "",
+      "published_at": "2026-10-23T12:35:32+08:00",
+      "logged_at": "2026-10-23T12:35:32+08:00",
+      "initial_metrics": {
+        "views": null,
+        "likes": null,
+        "comments": null,
+        "shares": null
+      },
+      "skill_source": "",
+      "profile": "jinlab",
+      "persona_check": {
+        "score": 80,
+        "verdict": "pass"
+      },
+      "tags": [],
+      "notes": ""
+    },
+    {
+      "id": 107,
+      "platform": "抖音",
+      "title": "小天才AI眼镜：网络效应的故事",
+      "url": "",
+      "type": "视频",
+      "published_at": "2026-10-23T13:22:00+08:00",
+      "logged_at": "2026-10-23T13:22:00+08:00",
+      "initial_metrics": {
+        "views": null,
+        "likes": null,
+        "comments": null,
+        "shares": null
+      },
+      "skill_source": "calendar-auto",
+      "profile": "",
+      "persona_check": {
+        "score": null,
+        "verdict": ""
+      },
+      "tags": [
+        "小天才",
+        "AI眼镜",
+        "网络效应",
+        "科技"
+      ],
+      "notes": ""
+    },
+    {
+      "id": 108,
+      "platform": "抖音",
+      "title": "小天才AI眼镜：网络效应的故事",
+      "url": "",
+      "type": "",
+      "published_at": "2026-10-23T13:23:39+08:00",
+      "logged_at": "2026-10-23T13:23:39+08:00",
+      "initial_metrics": {
+        "views": null,
+        "likes": null,
+        "comments": null,
+        "shares": null
+      },
+      "skill_source": "",
+      "profile": "AI科普",
+      "persona_check": {
+        "score": 85,
+        "verdict": "pass"
+      },
+      "tags": [],
+      "notes": ""
     }
   ]
 }

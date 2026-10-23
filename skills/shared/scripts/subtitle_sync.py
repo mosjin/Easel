@@ -61,8 +61,8 @@ def parse_srt(text: str) -> list[tuple[float, float, str]]:
         if not m:
             continue
         g = [int(x) for x in m.groups()]
-        start = g[0] * 3600 + g[1] * 60 + g[2] + g[3] / (10 ** len(str(g[3])))
-        end = g[4] * 3600 + g[5] * 60 + g[6] + g[7] / (10 ** len(str(g[7])))
+        start = g[0] * 3600 + g[1] * 60 + g[2] + g[3] / 1000.0
+        end = g[4] * 3600 + g[5] * 60 + g[6] + g[7] / 1000.0
         text_lines = lines[lines.index(time_line) + 1:]
         cues.append((start, end, " ".join(text_lines).strip()))
     return cues

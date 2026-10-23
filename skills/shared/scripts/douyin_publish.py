@@ -160,6 +160,8 @@ def _launch(p, headed: bool, base: str | None, proxy: str | None):
     kwargs = dict(headless=not headed, locale="zh-CN", args=args)
     if proxy:
         kwargs["proxy"] = {"server": proxy}
+    # 临时：用系统 Google Chrome（有完整编解码器），调试渲染器崩溃问题
+    kwargs["executable_path"] = "/usr/bin/google-chrome-stable"
     return p.chromium.launch_persistent_context(str(profile), **kwargs)
 
 
@@ -1205,22 +1207,50 @@ def _publish(a, kind: str) -> int:
     snapshot_ids: set[str] = set()   # 发前快照（发布前作品 id 集；发布动作前在页面里抓）
     with sync_playwright() as p:
         ctx = _launch(p, headed=a.headed, base=a.profile_base, proxy=_proxy(a.proxy, a.no_proxy))
-        page = ctx.pages[0] if ctx.pages else ctx.new_page()
+        # 关闭 profile 里遗留的旧 tab（崩溃恢复页会拖垮新导航），始终用全新空白 tab
+        for _old in list(ctx.pages):
+            try:
+                _old.close()
+            except Exception:
+                pass
+        page = ctx.new_page()
         page.set_default_timeout(300000)
+        page.on("crash", lambda *_: print(f"💥 renderer crash url={page.url}", file=sys.stderr, flush=True))
+        page.on("pageerror", lambda err: print(f"⚡ pageerror: {str(err)[:300]}", file=sys.stderr, flush=True))
+        page.on("console", lambda msg: print(f"🖥 console[{msg.type}]: {msg.text[:200]}", file=sys.stderr, flush=True) if msg.type in ("error", "warning") else None)
         try:
-            page.goto(HOME_URL, wait_until="domcontentloaded")
+            # content/manage 比 HOME_URL 轻，不触发渲染进程崩溃
+            # （HOME_URL 重 JS 持续 Target crashed；readback 用此 URL 稳定运行，主流程同步）
+            print("→ goto content/manage", file=sys.stderr, flush=True)
+            page.goto("https://creator.douyin.com/creator-micro/content/manage",
+                      wait_until="domcontentloaded")
+            print(f"→ goto done url={page.url}", file=sys.stderr, flush=True)
+            try:
+                page.wait_for_timeout(3000)  # 等 SPA 稳定（与 readback 保持一致）
+            except Exception:
+                pass
+            print("→ wait_ready", file=sys.stderr, flush=True)
             _wait_ready(page)
+            print("→ logged_in check", file=sys.stderr, flush=True)
             if not _logged_in(page):
                 _die("未登录，请先 `login` 扫码")
+            print("→ snapshot", file=sys.stderr, flush=True)
             # 发前快照：记录当前作品 id 集，读回时用于排除旧作品
             snapshot_ids = platform_readback.capture_douyin_snapshot(page)
+            print("→ go_upload", file=sys.stderr, flush=True)
             _go_upload(page)
+            print(f"→ go_upload done url={page.url}", file=sys.stderr, flush=True)
             human_pace.pace("task-switch")               # 进编辑器的自然停顿
+            print("→ switch_tab", file=sys.stderr, flush=True)
             _switch_tab(page, "video" if kind == "video" else "imagetext")
+            print("→ upload_files", file=sys.stderr, flush=True)
             _upload_files(page, media)
+            print("→ upload_files done", file=sys.stderr, flush=True)
             human_pace.pace("field-switch")              # 上传后到填写前
             if kind == "video":
+                print("→ wait_video_processed", file=sys.stderr, flush=True)
                 _wait_video_processed(page)
+                print("→ select_ai_cover", file=sys.stderr, flush=True)
                 _select_ai_cover(page)
             _fill_title_desc(page, a.title, a.content or "", tags)
             _click_publish(page, len(a.title) + len(a.content or ""))
